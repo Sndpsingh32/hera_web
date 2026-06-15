@@ -8,7 +8,28 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
   tanstackStart: {
-    ssr: false,
-    server: { entry: "server" },
+    spa: {
+      enabled: true,
+      prerender: {
+        outputPath: "/index.html",
+      },
+    },
+  },
+  vite: {
+    build: {
+      outDir: "dist",
+    },
+    environments: {
+      client: {
+        build: {
+          outDir: "dist",
+        },
+      },
+      ssr: {
+        build: {
+          outDir: ".tanstack-server",
+        },
+      },
+    },
   },
 });
