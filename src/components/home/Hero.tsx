@@ -6,10 +6,10 @@ export function Hero() {
       <img src={heroFurnace} alt="Ferro alloy furnace" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/40 to-black/70" />
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white px-6">
-        <h1 className="font-display font-semibold text-4xl md:text-6xl lg:text-7xl leading-tight max-w-5xl">
+        <h1 className="font-display font-semibold text-4xl md:text-6xl lg:text-[70px] leading-[100%] tracking-[0.01em] max-w-[913px] mx-auto">
           Ferro Alloys Built for the<br />Steel Value Chain
         </h1>
-        <button className="mt-10 bg-brand text-brand-foreground text-xs font-bold tracking-widest px-6 py-3 rounded-md hover:opacity-90 transition">
+        <button className="mt-8 bg-[#EB1E28] text-white font-['Open_Sans'] text-[14px] font-semibold leading-[100%] tracking-[0.01em] uppercase w-[226px] h-[50px] rounded-[6px] flex items-center justify-center mx-auto hover:opacity-90 transition">
           KNOW MORE ABOUT US
         </button>
       </div>

@@ -1,13 +1,14 @@
+import hiraLogo from "@/assets/hira_logo.jpg";
+
 export function Footer() {
   return (
     <footer className="bg-black text-white px-6 lg:px-16 pt-0 pb-8">
       <div className="max-w-[1400px] mx-auto -mt-[96px] bg-black px-0 pt-[156px] pb-0">
         <div className="grid gap-12 lg:grid-cols-[217px_1fr] lg:items-start">
           <div>
-            <div className="flex flex-col leading-none">
-              <span className="text-[58px] font-bold tracking-tight text-white">HIRA</span>
-              <span className="mt-1 text-[12px] font-semibold tracking-[0.08em] text-white">HIRA ELECTRO SMELTERS</span>
-            </div>
+            <a href="/" className="flex shrink-0">
+              <img src={hiraLogo} alt="HIRA Electro Smelters" className="h-[60px] md:h-[80px] w-auto object-contain" />
+            </a>
             <p className="mt-6 text-sm text-white/90">
               Follow us on <a href="#" className="text-brand hover:underline">Linkedin</a>
             </p>
