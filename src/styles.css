@@ -16,6 +16,8 @@
   --color-border: var(--border);
   --font-display: "Montserrat", system-ui, sans-serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
+  --font-body: "Open Sans", system-ui, sans-serif;
+  --font-poppins: "Poppins", system-ui, sans-serif;
 }
 
 :root {
@@ -32,6 +34,30 @@
 
 @layer base {
   * { border-color: var(--color-border); }
-  html { font-family: var(--font-sans); }
-  body { background: var(--color-background); color: var(--color-foreground); }
+  html {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+}
+
+@layer utilities {
+  .page-shell {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section-container {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: clamp(1.25rem, 3vw, 3rem);
+  }
 }

@@ -1,0 +1,633 @@
+# ROLE
+
+You are a senior Frontend Engineer and Award Winning UI Developer.
+
+Create a pixel-perfect React + Next.js (App Router) + Tailwind CSS section identical to the provided Figma.
+
+The UI should look exactly like a premium industrial/manufacturing corporate website such as Tata Steel, JSW, Vedanta, Jindal Steel or Godawari Power.
+
+Use reusable components.
+
+Never use inline CSS.
+
+Use Next Image.
+
+Use Framer Motion animations.
+
+Code should be production ready.
+
+------------------------------------------------------------
+
+SECTION
+
+Background
+
+#000000
+
+Container
+
+max-width:1306px
+
+margin:auto
+
+padding-top:120px
+
+padding-bottom:120px
+
+------------------------------------------------------------
+
+PART 1
+
+OUR PRODUCTS
+
+Heading centered
+
+Text
+
+Our Products
+
+Font
+
+Poppins
+
+Weight
+
+600
+
+Size
+
+50px
+
+Color
+
+White
+
+margin-bottom
+
+60px
+
+------------------------------------------------------------
+
+PRODUCT GRID
+
+2 Rows
+
+3 Columns
+
+Gap
+
+33px
+
+Card Size
+
+411px
+
+411px
+
+Border Radius
+
+0
+
+Overflow hidden
+
+Position relative
+
+Image covers full card.
+
+Use object-cover.
+
+------------------------------------------------------------
+
+CARD OVERLAY
+
+Bottom overlay
+
+background
+
+linear-gradient(
+180deg,
+rgba(0,0,0,0) 0%,
+rgba(0,0,0,.82) 100%
+)
+
+Overlay padding
+
+Left 48px
+
+Right 40px
+
+Bottom 38px
+
+------------------------------------------------------------
+
+RED INDICATOR
+
+Small vertical line
+
+Width
+
+3px
+
+Height
+
+52px
+
+Color
+
+#E53630
+
+Placed before title.
+
+Gap
+
+18px
+
+------------------------------------------------------------
+
+TITLE
+
+Font
+
+Poppins
+
+Weight
+
+600
+
+Size
+
+24px
+
+Color
+
+White
+
+Line height
+
+100%
+
+------------------------------------------------------------
+
+DESCRIPTION
+
+Only first card has description.
+
+Font
+
+Poppins
+
+Weight
+
+400
+
+Size
+
+16px
+
+Line height
+
+20px
+
+Color
+
+rgba(255,255,255,.75)
+
+Top margin
+
+18px
+
+------------------------------------------------------------
+
+CTA BUTTON
+
+Only first card.
+
+Square button
+
+40x40
+
+Background
+
+#E53630
+
+Icon
+
+Arrow Up Right
+
+White
+
+Rounded
+
+6px
+
+Hover
+
+Rotate icon
+
+45deg
+
+------------------------------------------------------------
+
+PRODUCT DATA
+
+const products=[
+
+{
+
+title:"High Carbon Ferro Manganese (HC FeMn)",
+
+description:"The backbone of ferro alloy consumption worldwide and the starting point for manganese addition in steelmaking.",
+
+image:"/images/products/high-carbon.jpg",
+
+featured:true
+
+},
+
+{
+
+title:"Medium Carbon Ferro Manganese (MC FeMn)",
+
+image:"/images/products/medium-carbon.jpg"
+
+},
+
+{
+
+title:"Low Carbon Ferro Manganese (LC FeMn)",
+
+image:"/images/products/low-carbon.jpg"
+
+},
+
+{
+
+title:"Ferro Manganese Slag",
+
+image:"/images/products/slag.jpg"
+
+},
+
+{
+
+title:"MOX Dust",
+
+image:"/images/products/mox.jpg"
+
+},
+
+{
+
+title:"Rejected Slag Dust",
+
+image:"/images/products/rejected-slag.jpg"
+
+}
+
+]
+
+------------------------------------------------------------
+
+CARD HOVER
+
+Scale image
+
+1
+
+to
+
+1.08
+
+Overlay darker
+
+Title moves
+
+Y
+
+12px
+
+to
+
+0
+
+Arrow rotates
+
+45deg
+
+Transition
+
+600ms
+
+------------------------------------------------------------
+
+PART 2
+
+Built Around Quality
+
+Space from products
+
+120px
+
+Heading
+
+Built Around Quality
+
+Centered
+
+Font
+
+Poppins
+
+Weight
+
+600
+
+Size
+
+50px
+
+Color
+
+White
+
+Margin bottom
+
+60px
+
+------------------------------------------------------------
+
+QUALITY GRID
+
+3 columns
+
+Gap
+
+40px
+
+------------------------------------------------------------
+
+QUALITY CARD
+
+Background
+
+#090909
+
+Padding
+
+40px
+
+Height
+
+420px
+
+Display
+
+flex
+
+Column
+
+Align center
+
+------------------------------------------------------------
+
+LOGO BOX
+
+Square
+
+170px
+
+White background
+
+Centered
+
+------------------------------------------------------------
+
+TITLE
+
+Font
+
+Poppins
+
+Weight
+
+600
+
+Size
+
+22px
+
+Color
+
+White
+
+Centered
+
+margin-top
+
+32px
+
+------------------------------------------------------------
+
+DESCRIPTION
+
+Font
+
+Poppins
+
+Weight
+
+400
+
+Size
+
+15px
+
+Line Height
+
+24px
+
+Color
+
+rgba(255,255,255,.72)
+
+Centered
+
+margin-top
+
+18px
+
+------------------------------------------------------------
+
+QUALITY DATA
+
+const quality=[
+
+{
+
+title:"ISO 9001:2015 Certified Operations",
+
+description:"Certified for manufacturing and supply of ferro alloys, supporting consistent quality management across operations.",
+
+logo:"/images/certifications/iso.png"
+
+},
+
+{
+
+title:"Bureau of Indian Standards (BIS) Certification",
+
+description:"Certified under BIS standards for Ferro Manganese, supporting product quality and compliance across manufacturing operations.",
+
+logo:"/images/certifications/bis.png"
+
+},
+
+{
+
+title:"In-House Quality Control Laboratory",
+
+description:"Dedicated laboratory and inspection systems supporting comprehensive quality assurance throughout production stages.",
+
+logo:"/images/certifications/lab.png"
+
+}
+
+]
+
+------------------------------------------------------------
+
+ANIMATIONS
+
+Entire section
+
+opacity
+
+0→1
+
+y
+
+80→0
+
+duration
+
+0.8
+
+delay
+
+0.2
+
+Products
+
+stagger
+
+0.12
+
+Cards
+
+opacity
+
+0→1
+
+scale
+
+0.95→1
+
+Quality Cards
+
+delay
+
+0.5
+
+opacity
+
+0→1
+
+y
+
+50→0
+
+------------------------------------------------------------
+
+RESPONSIVE
+
+Desktop
+
+3 columns
+
+Tablet
+
+2 columns
+
+Mobile
+
+1 column
+
+Heading
+
+50→34px
+
+Cards
+
+411→100%
+
+Quality cards
+
+stack vertically
+
+Gap
+
+24px
+
+Container padding
+
+24px
+
+------------------------------------------------------------
+
+COMPONENT STRUCTURE
+
+components/
+
+ProductsSection/
+
+ProductsSection.tsx
+
+ProductCard.tsx
+
+QualityCard.tsx
+
+data.ts
+
+types.ts
+
+------------------------------------------------------------
+
+LIBRARIES
+
+next/image
+
+framer-motion
+
+lucide-react
+
+tailwindcss
+
+------------------------------------------------------------
+
+QUALITY
+
+Pixel perfect spacing.
+
+Proper semantic HTML.
+
+Reusable components.
+
+Accessibility.
+
+Lazy loaded images.
+
+No hardcoded duplicated JSX.
+
+No inline styles.
+
+Generate complete production-ready code.

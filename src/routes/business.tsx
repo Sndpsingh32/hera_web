@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { BusinessHero } from "@/components/business/BusinessHero";
-import { BusinessOverview } from "@/components/business/BusinessOverview";
-import { ManufacturingEcosystem } from "@/components/business/ManufacturingEcosystem";
-import { BusinessStats } from "@/components/business/BusinessStats";
-import { Footer } from "@/components/home/Footer";
+import { BusinessIntro } from "@/components/business/BusinessIntro";
+import { ManufacturingHighlights } from "@/components/business/ManufacturingHighlights/ManufacturingHighlights";
+import { ManufacturingProcess } from "@/components/business/ManufacturingProcess";
+import { BusinessEfficient } from "@/components/business/BusinessEfficient";
+import { ProductsSection } from "@/components/business/ProductsSection/ProductsSection";
+import { GlobalMarkets } from "@/components/business/GlobalMarkets/GlobalMarkets";
 
 export const Route = createFileRoute("/business")({
   head: () => ({
@@ -21,12 +23,14 @@ export const Route = createFileRoute("/business")({
 
 function BusinessPage() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="page-shell bg-black">
       <BusinessHero />
-      <BusinessOverview />
-      <ManufacturingEcosystem />
-      <BusinessStats />
-      <Footer />
+      <BusinessIntro />
+      <ManufacturingProcess />
+      <ManufacturingHighlights />
+      <BusinessEfficient />
+      <ProductsSection />
+      <GlobalMarkets />
     </div>
   );
 }
