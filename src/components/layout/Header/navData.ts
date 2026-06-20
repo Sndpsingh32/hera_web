@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
       { label: "Global Presence", href: "#" },
     ],
   },
-  { label: "Sustainability", to: undefined },
+  { label: "Sustainability", to: "/sustainability" },
   { label: "People", to: undefined },
   { label: "Contact", to: undefined },
 ];
