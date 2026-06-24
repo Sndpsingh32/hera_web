@@ -36,7 +36,7 @@ export function ContactSection({ embedded = false, overlap = false }: ContactSec
       />
 
       <div className="relative z-10 grid h-full grid-cols-1 items-start gap-10 px-5 py-12 text-white md:px-10 md:py-16 lg:grid-cols-[minmax(0,40%)_minmax(0,60%)] lg:items-center lg:gap-20 lg:px-[60px] lg:py-[70px]">
-        <div className="max-w-[450px] lg:pt-2">
+        <div className="max-w-[500px] lg:pt-2">
           <div className="flex items-center gap-3">
             <span className="font-body text-base leading-none font-bold text-white">
               {contactCopy.label}
@@ -46,7 +46,7 @@ export function ContactSection({ embedded = false, overlap = false }: ContactSec
 
           <h2
             id="contact-visible-heading"
-            className="mt-6 font-display text-[clamp(1.75rem,4vw,3rem)] leading-[110%] font-bold text-white lg:mt-6"
+            className="mt-6 font-display text-[28px] leading-[110%] font-bold text-white lg:mt-6 lg:text-[30px]"
           >
             {contactCopy.heading[0]}
             <br />
