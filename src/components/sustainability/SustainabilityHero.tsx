@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
+import { getImageUrl } from "@/data/imageMap";
 
 export function SustainabilityHero({ product }: { product?: any }) {
   // Fallback to static imports if no product is passed (for the old sustainability route)
   const defaultImage = "/src/assets/businesshero.jpg";
-  const imageSrc = product?.hero?.image || defaultImage;
+  const imageSrc = getImageUrl(product?.hero?.image || defaultImage);
   const heading = product?.hero?.heading || "High Carbon Ferro Manganese";
   const overview = product?.overview || "The most widely produced ferro alloy globally, High Carbon Ferro Manganese is smelted directly from manganese ore in our Submerged Arc Furnaces. It serves as the primary manganese additive in steelmaking, functioning as a deoxidiser that also enhances hardness, tensile strength, and abrasion resistance in the finished steel.";
 

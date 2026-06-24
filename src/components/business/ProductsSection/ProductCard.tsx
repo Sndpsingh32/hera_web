@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Product } from "@/components/business/ProductsSection/types";
+import { getImageUrl } from "@/data/imageMap";
 
 type ProductCardProps = {
   product: Product;
@@ -17,7 +18,7 @@ export function ProductCard({ product, index }: ProductCardProps) {
       className="group relative aspect-square w-full overflow-hidden"
     >
       <img
-        src={product.image}
+        src={getImageUrl(product.image)}
         alt={product.title}
         loading="lazy"
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.08]"

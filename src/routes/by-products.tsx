@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import websiteContent from "@/data/websiteContent.json";
+import { getImageUrl } from "@/data/imageMap";
 import { SustainabilityHero } from "@/components/sustainability/SustainabilityHero";
 import { ProductApplications } from "@/components/sustainability/ProductApplications";
 import { ContactSection } from "@/components/shared/ContactSection";
@@ -66,7 +67,7 @@ function ByProductsPage() {
            {/* Re-use hero layout for each item's intro */}
            <section className="relative min-h-[400px] w-full overflow-hidden flex items-center justify-center">
              <img
-               src={item.image}
+               src={getImageUrl(item.image)}
                alt={item.title}
                className="absolute inset-0 h-full w-full object-cover object-center opacity-40"
              />

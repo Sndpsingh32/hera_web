@@ -14,7 +14,6 @@ const footerColumns = [
     title: "Business",
     links: [
       { label: "Business Overview", href: "/business" },
-      { label: "Our Products", href: "/sustainability" },
       { label: "High Carbon Ferro Manganese", href: "/products/high-carbon-ferro-manganese" },
       { label: "Medium Carbon Ferro Manganese", href: "/products/medium-carbon-ferro-manganese" },
       { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
