@@ -1,0 +1,28 @@
+import heroImage from "@/assets/abouthero.jpg";
+import { motion } from "framer-motion";
+
+export function AboutHero() {
+  return (
+    <section className="relative min-h-[560px] h-[min(100svh,1002px)] w-full overflow-hidden">
+      <img
+        src={heroImage}
+        alt="About Us"
+        width={1728}
+        height={1002}
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/0 to-black/[0.31]" />
+
+      <div className="section-container relative flex h-full min-h-[560px] flex-col items-center justify-center pt-[72px] pb-16 text-center text-white lg:pt-[110px] lg:pb-20">
+        <motion.h1
+          initial={{ opacity: 0, y: 32 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="font-display max-w-[910px] text-[clamp(1.75rem,4.5vw,3.125rem)] font-semibold leading-[110%] tracking-[0.01em]"
+        >
+          About Us
+        </motion.h1>
+      </div>
+    </section>
+  );
+}

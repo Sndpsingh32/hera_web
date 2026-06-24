@@ -12,6 +12,7 @@ export type NavItem = {
 export const navItems: NavItem[] = [
   {
     label: "About Us",
+    to: "/about",
     dropdown: [
       { label: "Company Overview", href: "#" },
       { label: "Leadership", href: "#" },
@@ -30,7 +31,7 @@ export const navItems: NavItem[] = [
     ],
   },
   { label: "Sustainability", to: "/sustainability" },
-  { label: "People", to: undefined },
+  { label: "People", to: "/people" },
   { label: "Contact", to: undefined },
 ];
 

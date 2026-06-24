@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SustainabilityRouteImport } from './routes/sustainability'
+import { Route as PeopleRouteImport } from './routes/people'
 import { Route as BusinessRouteImport } from './routes/business'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SustainabilityRoute = SustainabilityRouteImport.update({
@@ -18,9 +20,19 @@ const SustainabilityRoute = SustainabilityRouteImport.update({
   path: '/sustainability',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PeopleRoute = PeopleRouteImport.update({
+  id: '/people',
+  path: '/people',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BusinessRoute = BusinessRouteImport.update({
   id: '/business',
   path: '/business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const IndexRoute = IndexRouteImport.update({
@@ -31,31 +43,39 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/business': typeof BusinessRoute
+  '/people': typeof PeopleRoute
   '/sustainability': typeof SustainabilityRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/business': typeof BusinessRoute
+  '/people': typeof PeopleRoute
   '/sustainability': typeof SustainabilityRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
   '/business': typeof BusinessRoute
+  '/people': typeof PeopleRoute
   '/sustainability': typeof SustainabilityRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/business' | '/sustainability'
+  fullPaths: '/' | '/about' | '/business' | '/people' | '/sustainability'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/business' | '/sustainability'
-  id: '__root__' | '/' | '/business' | '/sustainability'
+  to: '/' | '/about' | '/business' | '/people' | '/sustainability'
+  id: '__root__' | '/' | '/about' | '/business' | '/people' | '/sustainability'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
   BusinessRoute: typeof BusinessRoute
+  PeopleRoute: typeof PeopleRoute
   SustainabilityRoute: typeof SustainabilityRoute
 }
 
@@ -68,11 +88,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SustainabilityRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/people': {
+      id: '/people'
+      path: '/people'
+      fullPath: '/people'
+      preLoaderRoute: typeof PeopleRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/business': {
       id: '/business'
       path: '/business'
       fullPath: '/business'
       preLoaderRoute: typeof BusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/': {
@@ -87,7 +121,9 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
   BusinessRoute: BusinessRoute,
+  PeopleRoute: PeopleRoute,
   SustainabilityRoute: SustainabilityRoute,
 }
 export const routeTree = rootRouteImport
