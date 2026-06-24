@@ -13,7 +13,6 @@ export const footerColumns: FooterColumnData[] = [
     title: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      { label: "Our Journey", href: "#" },
       { label: "Our Leadership", href: "/people" },
     ],
   },
@@ -21,33 +20,14 @@ export const footerColumns: FooterColumnData[] = [
     title: "Business",
     links: [
       { label: "Business Overview", href: "/business" },
+    ],
+  },
+  {
+    title: "Products",
+    links: [
       { label: "High Carbon Ferro Manganese", href: "/products/high-carbon-ferro-manganese" },
       { label: "Medium Carbon Ferro Manganese", href: "/products/medium-carbon-ferro-manganese" },
       { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Sustainability", href: "#" },
-      { label: "By-Products", href: "/by-products" },
-    ],
-  },
-  {
-    title: "Contact",
-    links: [
-      { label: "Registered Office", href: "#" },
-      { label: "Plant Location", href: "#" },
-      { label: "Email", href: "#" },
-      { label: "Phone", href: "#" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { label: "Privacy Policy", href: "#" },
-      { label: "Terms of Use", href: "#" },
-      { label: "Disclaimer", href: "#" },
     ],
   },
 ];

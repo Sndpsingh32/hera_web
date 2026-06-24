@@ -33,9 +33,6 @@ export const navItems: NavItem[] = [
       { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
     ],
   },
-  { label: "Sustainability", to: undefined },
-  { label: "People", to: undefined },
-  { label: "Contact", to: undefined },
 ];
 
 export const mobileSocialLinks = [

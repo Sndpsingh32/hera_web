@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import type { Product } from "@/components/home/BusinessSection/businessData";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "@tanstack/react-router";
 
 type ProductCardProps = {
   product: Product;
@@ -21,6 +22,16 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
     product.title
   );
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (isActive && product.link) {
+      navigate({ to: product.link });
+    } else {
+      onActivate();
+    }
+  };
+
   return (
     <article
       role="button"
@@ -29,15 +40,15 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
       aria-pressed={isActive}
       onMouseEnter={onActivate}
       onFocus={onActivate}
-      onClick={onActivate}
+      onClick={handleClick}
       onKeyDown={(event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
-          onActivate();
+          handleClick();
         }
       }}
       className={cn(
-        "relative shrink-0 snap-center overflow-hidden rounded-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white",
+        "relative shrink-0 snap-center overflow-hidden rounded-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white cursor-pointer",
         "h-[500px] w-[280px] lg:w-[160px]",
         isActive && "lg:w-[350px]",
       )}
@@ -59,7 +70,7 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
       >
         <div className="absolute inset-[26px] flex flex-col items-center rounded-[8px] bg-[rgba(235,30,40,0.60)] lg:inset-[26px]">
           <div className="flex flex-1 items-center justify-center">
-            <div className="flex h-20 w-20 items-center justify-center rounded-[6px] bg-white">
+            <div className={cn("flex h-20 w-20 items-center justify-center rounded-[6px] bg-white transition-colors hover:bg-gray-100", product.link ? "cursor-pointer" : "")}>
               <ArrowUpRight className="h-[46px] w-[46px] text-[#EB1E28]" strokeWidth={2} />
             </div>
           </div>
