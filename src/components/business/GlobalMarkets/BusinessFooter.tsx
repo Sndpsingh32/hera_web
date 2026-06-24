@@ -1,18 +1,49 @@
 import hiraLogo from "@/assets/hira_logo.jpg";
+import { Link } from "@tanstack/react-router";
 
 const footerColumns = [
-  { title: "Company", links: ["About Us", "Our Journey", "Leadership"] },
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Our Journey", href: "#" },
+      { label: "Our Leadership", href: "/people" },
+    ],
+  },
   {
     title: "Business",
     links: [
-      "High Carbon Ferro Manganese,",
-      "Medium Carbon Ferro Manganese,",
-      "Low Carbon Ferro Manganese",
+      { label: "Business Overview", href: "/business" },
+      { label: "Our Products", href: "/sustainability" },
+      { label: "High Carbon Ferro Manganese", href: "/products/high-carbon-ferro-manganese" },
+      { label: "Medium Carbon Ferro Manganese", href: "/products/medium-carbon-ferro-manganese" },
+      { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
     ],
   },
-  { title: "Resources", links: ["People", "Sustainability"] },
-  { title: "Contact", links: ["Registered office", "Plant location", "Email", "Phone"] },
-  { title: "Legal", links: ["Privacy Policy", "Terms of Use", "Disclaimer"] },
+  {
+    title: "Resources",
+    links: [
+      { label: "Sustainability", href: "#" },
+      { label: "By-Products", href: "/by-products" },
+    ],
+  },
+  {
+    title: "Contact",
+    links: [
+      { label: "Registered office", href: "#" },
+      { label: "Plant location", href: "#" },
+      { label: "Email", href: "#" },
+      { label: "Phone", href: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "#" },
+      { label: "Terms of Use", href: "#" },
+      { label: "Disclaimer", href: "#" },
+    ],
+  },
 ];
 
 export function BusinessFooter() {
@@ -21,13 +52,13 @@ export function BusinessFooter() {
       <div className="section-container">
         <div className="grid gap-12 lg:grid-cols-[217px_1fr] lg:items-start">
           <div>
-            <a href="/" className="flex shrink-0">
+            <Link to="/" className="flex shrink-0">
               <img
                 src={hiraLogo}
                 alt="HIRA Electro Smelters"
                 className="h-[60px] w-auto object-contain md:h-[80px]"
               />
-            </a>
+            </Link>
             <p className="mt-6 text-sm text-white/90">
               Follow us on{" "}
               <a href="#" className="text-[#E53630] hover:underline">
@@ -43,11 +74,11 @@ export function BusinessFooter() {
                   {column.title}
                 </div>
                 <ul className="space-y-3 text-[16px] leading-none text-white/90">
-                  {column.links.map((link) => (
-                    <li key={link}>
-                      <a href="#" className="transition hover:text-[#E53630]">
-                        {link}
-                      </a>
+                  {column.links.map((link, idx) => (
+                    <li key={idx}>
+                      <Link to={link.href} className="transition hover:text-[#E53630]">
+                        {link.label}
+                      </Link>
                     </li>
                   ))}
                 </ul>

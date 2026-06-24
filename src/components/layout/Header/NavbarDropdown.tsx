@@ -85,13 +85,13 @@ export function NavbarDropdown({ item, isActive }: NavbarDropdownProps) {
             <ul className="space-y-1">
               {item.dropdown.map((link) => (
                 <li key={link.label} role="none">
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     role="menuitem"
                     className="block rounded-[8px] px-3 py-2.5 font-body text-[15px] leading-none font-normal text-white/90 transition-colors duration-200 hover:bg-[rgba(235,30,40,0.12)] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#EB1E28]"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

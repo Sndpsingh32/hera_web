@@ -1,0 +1,44 @@
+{
+  "highCarbonFerroManganese": {
+    "hero": {
+      "eyebrow": "Our Products",
+      "heading": "High Carbon Ferro Manganese"
+    },
+    "overview": "The most widely produced ferro alloy globally, High Carbon Ferro Manganese is smelted directly from manganese ore in our Submerged Arc Furnaces. It serves as the primary manganese additive in steelmaking, functioning as a deoxidiser that also enhances hardness, tensile strength, and abrasion resistance in the finished steel.",
+    "specifications": [
+      { "label": "Manganese (Mn)", "value": "65% – 78%" },
+      { "label": "Carbon (C)", "value": "6 – 8%" },
+      { "label": "Silicon (Si)", "value": "1% Max" },
+      { "label": "Phosphorus (P)", "value": "0.10 – 0.35%" },
+      { "label": "Sulphur (S)", "value": "0.05% Max" }
+    ],
+    "size": "As per buyer requirements",
+    "appearance": "Silver or dark grey lumps (10–100mm)",
+    "applications": [
+      {
+        "title": "Steel Manufacturing",
+        "description": "Used across carbon steel and alloy steel manufacturing processes."
+      },
+      {
+        "title": "Deoxidation",
+        "description": "Supports the removal of oxygen during steelmaking operations."
+      },
+      {
+        "title": "Alloy Strengthening",
+        "description": "Improves the hardness, strength, and wear resistance of steel."
+      },
+      {
+        "title": "Industrial Steel Applications",
+        "description": "Used across infrastructure, engineering, automotive, and industrial steel segments."
+      }
+    ],
+    "navigation": {
+      "heading": "Explore Our Products",
+      "links": [
+        { "title": "Medium Carbon Ferro Manganese", "href": "#" },
+        { "title": "Low Carbon Ferro Manganese", "href": "#" }
+      ],
+      "backLink": { "title": "Back to Business", "href": "/global-markets" }
+    }
+  }
+}

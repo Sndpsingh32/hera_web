@@ -14,24 +14,20 @@ export const navItems: NavItem[] = [
     label: "About Us",
     to: "/about",
     dropdown: [
-      { label: "Company Overview", href: "#" },
-      { label: "Leadership", href: "#" },
-      { label: "Vision", href: "#" },
-      { label: "History", href: "#" },
+      { label: "About Us", href: "/about" },
+      { label: "Our Leadership", href: "/people" },
     ],
   },
   {
     label: "Business",
     to: "/business",
     dropdown: [
-      { label: "Ferro Alloys", href: "#" },
-      { label: "Manufacturing", href: "#" },
-      { label: "Infrastructure", href: "#" },
-      { label: "Global Presence", href: "#" },
+      { label: "Business Overview", href: "/business" },
+      { label: "Our Products", href: "/sustainability" },
     ],
   },
-  { label: "Sustainability", to: "/sustainability" },
-  { label: "People", to: "/people" },
+  { label: "Sustainability", to: undefined },
+  { label: "People", to: undefined },
   { label: "Contact", to: undefined },
 ];
 

@@ -1,8 +1,18 @@
 export const contactCopy = {
-  label: "Contact Us",
+  label: "CONTACT US",
   heading: ["Have a Business Requirement", "or Query?"],
   description: "Our team will reach out to you at the earliest.",
-  email: "info@hira.com",
+  address: {
+    title: "Plant Office Address",
+    details: "Plot no 364-367, APIIC Growth Center, Bobbili- 535558, Dist. Vizianagaram (Andhra Pradesh) India",
+  },
+  phone: "+91 8944247008",
+  emails: [
+    { label: "Admin", email: "admin@heslindia.com" },
+    { label: "CFO", email: "cfo@heslindia.com" },
+    { label: "CS", email: "compliance@heslindia.com" },
+    { label: "HR", email: "hr@heslindia.com" },
+  ]
 } as const;
 
 export const formFields = {

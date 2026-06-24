@@ -1,0 +1,490 @@
+{
+  "business": {
+    "hero": {
+      "eyebrow": "Our Business",
+      "headingOptions": [
+        "Powering the Foundations of Steel",
+        "Integrated for Industrial Progress",
+        "Ferro Manganese for the World's Steel"
+      ],
+      "activeHeadingIndex": 0,
+      "image": "/src/assets/businesshero.jpg"
+    },
+    "overview": {
+      "intro": "Hira Electro Smelters Limited (HESL) is an integrated ferro alloys manufacturer supplying High Carbon, Medium Carbon, and Low Carbon Ferro Manganese to steel producers and industrial consumers across India and 26 countries worldwide. Strategically located near Visakhapatnam Port in Andhra Pradesh and backed by the wider Hira Group ecosystem, we operate at the intersection of manufacturing scale, metallurgical capability, and export-ready infrastructure.\n\nOne facility. Full integration.\nBuilt to deliver across grades and geographies.",
+      "processFlowHeading": "Our Integrated Manufacturing Ecosystem",
+      "processFlow": [
+        "Raw Material Receipt & Inspection",
+        "Material Handling & Batching",
+        "Smelting Operations",
+        "Metal & Slag Separation",
+        "Refining & Decarburisation",
+        "Quality Inspection",
+        "Sizing, Packing & Dispatch"
+      ],
+      "highlights": [
+        "83,682 MT Annual Ferro Alloys Manufacturing Capacity",
+        "5,500+ MT Monthly Export Volume",
+        "90%+ Capacity Utilisation",
+        "25+ Countries Served Globally",
+        "Star Export House Recognised Export Status",
+        "Largest Indian Producer of MC & LC FeMn"
+      ],
+      "efficiency": {
+        "heading": "Efficient by Design",
+        "description": "Our manufacturing approach is built around efficient operations, process discipline, and responsible resource use. This enables us to strengthen production consistency, improve operational reliability, and support cost-efficient Ferro Manganese manufacturing.",
+        "cta": {
+          "label": "Explore Our Efficiency Systems",
+          "link": "/by-products"
+        }
+      }
+    },
+    "productsList": {
+      "heading": "Our Products",
+      "items": [
+        {
+          "title": "High Carbon Ferro Manganese (HC FeMn)",
+          "description": "The backbone of ferro alloy consumption worldwide and the starting point for manganese addition in steelmaking.",
+          "link": "/products/high-carbon-ferro-manganese",
+          "image": "/src/assets/product-hc.jpg"
+        },
+        {
+          "title": "Medium Carbon Ferro Manganese (MC FeMn)",
+          "description": "Refined ferro manganese grade designed for steel applications requiring balanced carbon levels and improved compositional control.",
+          "link": "/products/medium-carbon-ferro-manganese",
+          "image": "/src/assets/product-manganese.jpg"
+        },
+        {
+          "title": "Low Carbon Ferro Manganese (LC FeMn)",
+          "description": "Speciality ferro alloy developed for high-grade steel production where lower carbon content and tighter metallurgical parameters are essential.",
+          "link": "/products/low-carbon-ferro-manganese",
+          "image": "/src/assets/product-manganese.jpg"
+        },
+        {
+          "title": "Ferro Manganese Slag",
+          "description": "A process-derived material generated during ferro alloys production and utilised across industrial and recovery-based applications.",
+          "link": "/by-products",
+          "image": "/src/assets/product-slag.jpg"
+        },
+        {
+          "title": "MOX Dust",
+          "description": "Manganese oxide-rich by-product recovered during manufacturing and used in downstream industrial applications.",
+          "link": "/by-products",
+          "image": "/src/assets/product-slag.jpg"
+        },
+        {
+          "title": "Rejected Slag Dust",
+          "description": "Recovered process residue is redirected for industrial use to optimise material utilisation throughout the production cycle.",
+          "link": "/by-products",
+          "image": "/src/assets/product-slag.jpg"
+        }
+      ]
+    },
+    "certifications": {
+      "heading": "Built Around Quality",
+      "blocks": [
+        {
+          "title": "ISO 9001:2015 Certified Operations",
+          "description": "Certified for the manufacturing and supply of ferro alloys, supporting structured quality management across operations."
+        },
+        {
+          "title": "Bureau of Indian Standards (BIS) Certification",
+          "description": "Certified under IS 1171:2021 standards for Ferro Manganese, supporting product quality and compliance across manufacturing operations."
+        },
+        {
+          "title": "In-House Quality Control Laboratory",
+          "description": "Dedicated laboratory and inspection systems supporting composition testing and process monitoring across production stages."
+        }
+      ]
+    },
+    "globalMarkets": {
+      "heading": "Supporting Customers Across Global Markets",
+      "indiaMap": "Andhra Pradesh & Chhattisgarh",
+      "globalMap": [
+        "UAE",
+        "South Korea",
+        "Hong Kong",
+        "Japan",
+        "UK",
+        "Australia",
+        "Italy",
+        "Austria",
+        "Turkey",
+        "Switzerland",
+        "Poland",
+        "Canada",
+        "China",
+        "Taiwan",
+        "Macedonia",
+        "Türkiye",
+        "Philippines",
+        "New Zealand",
+        "Slovakia",
+        "Indonesia",
+        "Germany",
+        "Singapore",
+        "Thailand",
+        "Luxembourg",
+        "Brazil"
+      ]
+    },
+    "queryForm": {
+      "heading": "Have a Business Requirement or Query?\nOur team will reach out to you at the earliest.",
+      "fields": [
+        "Full Name",
+        "Company Name",
+        "Email Address",
+        "Contact Number",
+        "State",
+        "Country",
+        "Message",
+        "Submit Enquiry"
+      ]
+    }
+  },
+  "products": {
+    "high-carbon-ferro-manganese": {
+      "id": "high-carbon-ferro-manganese",
+      "hero": {
+        "eyebrow": "Our Products",
+        "heading": "High Carbon Ferro Manganese",
+        "image": "/src/assets/producthero.jpg"
+      },
+      "overview": "The most widely produced ferro alloy globally, High Carbon Ferro Manganese is smelted directly from manganese ore in our Submerged Arc Furnaces. It serves as the primary manganese additive in steelmaking, functioning as a deoxidiser that also enhances hardness, tensile strength, and abrasion resistance in the finished steel.",
+      "specifications": [
+        {
+          "label": "Manganese (Mn)",
+          "value": "65% – 78%"
+        },
+        {
+          "label": "Carbon (C)",
+          "value": "6 – 8%"
+        },
+        {
+          "label": "Silicon (Si)",
+          "value": "1% Max"
+        },
+        {
+          "label": "Phosphorus (P)",
+          "value": "0.10 – 0.35%"
+        },
+        {
+          "label": "Sulphur (S)",
+          "value": "0.05% Max"
+        },
+        {
+          "label": "Size",
+          "value": "As per buyer requirements"
+        },
+        {
+          "label": "Physical Appearance",
+          "value": "Silver or dark grey lumps (10–100mm)"
+        }
+      ],
+      "applications": [
+        {
+          "title": "Steel Manufacturing",
+          "description": "Used across carbon steel and alloy steel manufacturing processes."
+        },
+        {
+          "title": "Deoxidation",
+          "description": "Supports the removal of oxygen during steelmaking operations."
+        },
+        {
+          "title": "Alloy Strengthening",
+          "description": "Improves the hardness, strength, and wear resistance of steel."
+        },
+        {
+          "title": "Industrial Steel Applications",
+          "description": "Used across infrastructure, engineering, automotive, and industrial steel segments."
+        }
+      ],
+      "navigation": {
+        "heading": "Explore Our Products",
+        "links": [
+          {
+            "title": "Medium Carbon Ferro Manganese",
+            "link": "/products/medium-carbon-ferro-manganese"
+          },
+          {
+            "title": "Low Carbon Ferro Manganese",
+            "link": "/products/low-carbon-ferro-manganese"
+          }
+        ],
+        "backLink": {
+          "title": "Back to Business",
+          "link": "/business"
+        }
+      }
+    },
+    "medium-carbon-ferro-manganese": {
+      "id": "medium-carbon-ferro-manganese",
+      "hero": {
+        "eyebrow": "Our Products",
+        "heading": "Medium Carbon Ferro Manganese",
+        "image": "/src/assets/producthero.jpg"
+      },
+      "overview": "Medium Carbon Ferro Manganese is a refined ferro alloy produced through further processing of High Carbon Ferro Manganese in our Argon Oxygen Decarburisation converter. The controlled decarburisation process reduces carbon content while preserving manganese concentration, delivering an alloy that offers a balanced combination of ductility, strength, and metallurgical consistency for more demanding steel applications.",
+      "specifications": [
+        {
+          "label": "Manganese (Mn)",
+          "value": "70% – 80%"
+        },
+        {
+          "label": "Carbon (C)",
+          "value": "1 – 1.5%"
+        },
+        {
+          "label": "Silicon (Si)",
+          "value": "1% Max"
+        },
+        {
+          "label": "Phosphorus (P)",
+          "value": "0.25 – 0.35%"
+        },
+        {
+          "label": "Sulphur (S)",
+          "value": "0.05% Max"
+        },
+        {
+          "label": "Size",
+          "value": "10 – 60 mm"
+        }
+      ],
+      "applications": [
+        {
+          "title": "Special Steel Manufacturing",
+          "description": "Used across special steel applications requiring controlled carbon composition and improved metallurgical consistency."
+        },
+        {
+          "title": "High-Strength Low-Alloy (HSLA) Steel",
+          "description": "Supports the production of HSLA steels designed for improved strength-to-weight performance and structural reliability."
+        },
+        {
+          "title": "Tool Steel Applications",
+          "description": "Used in tool steel manufacturing, where balanced hardness, toughness, and alloy control are important."
+        },
+        {
+          "title": "Automotive & Engineering Components",
+          "description": "Suitable for automotive and engineering applications, including gears, shafts, and components requiring durability and wear resistance."
+        }
+      ],
+      "navigation": {
+        "heading": "Explore Our Products",
+        "links": [
+          {
+            "title": "High Carbon Ferro Manganese",
+            "link": "/products/high-carbon-ferro-manganese"
+          },
+          {
+            "title": "Low Carbon Ferro Manganese",
+            "link": "/products/low-carbon-ferro-manganese"
+          }
+        ],
+        "backLink": {
+          "title": "Back to Business",
+          "link": "/business"
+        }
+      }
+    },
+    "low-carbon-ferro-manganese": {
+      "id": "low-carbon-ferro-manganese",
+      "hero": {
+        "eyebrow": "Our Products",
+        "heading": "Low Carbon Ferro Manganese",
+        "image": "/src/assets/producthero.jpg"
+      },
+      "overview": "The most refined grade in our product portfolio, Low Carbon Ferro Manganese, is produced through extended Argon Oxygen Decarburisation refining to achieve very low carbon levels while maintaining a high manganese concentration. This grade is used in steel applications where tighter carbon control is essential to achieving specific metallurgical and performance requirements.",
+      "specifications": [
+        {
+          "label": "Manganese (Mn)",
+          "value": "70% – 80%"
+        },
+        {
+          "label": "Carbon (C)",
+          "value": "0.5% Max"
+        },
+        {
+          "label": "Silicon (Si)",
+          "value": "1% Max"
+        },
+        {
+          "label": "Phosphorus (P)",
+          "value": "0.25 – 0.35%"
+        },
+        {
+          "label": "Sulphur (S)",
+          "value": "0.05% Max"
+        },
+        {
+          "label": "Size",
+          "value": "10 – 60 mm"
+        }
+      ],
+      "applications": [
+        {
+          "title": "Stainless Steel Production",
+          "description": "Used in stainless steel manufacturing processes requiring lower residual carbon levels and controlled alloy composition."
+        },
+        {
+          "title": "Special Alloy Steels",
+          "description": "Supports specialised alloy steel applications where tighter metallurgical control is essential."
+        },
+        {
+          "title": "Corrosion-Resistant Materials",
+          "description": "Suitable for high-performance materials designed for corrosion resistance and long-term operational reliability."
+        },
+        {
+          "title": "Tool Steel & Precision Applications",
+          "description": "Used across tool steel and precision engineering applications requiring controlled carbon content and consistent metallurgical properties."
+        }
+      ],
+      "navigation": {
+        "heading": "Explore Our Products",
+        "links": [
+          {
+            "title": "High Carbon Ferro Manganese",
+            "link": "/products/high-carbon-ferro-manganese"
+          },
+          {
+            "title": "Medium Carbon Ferro Manganese",
+            "link": "/products/medium-carbon-ferro-manganese"
+          }
+        ],
+        "backLink": {
+          "title": "Back to Business",
+          "link": "/business"
+        }
+      }
+    }
+  },
+  "byProducts": {
+    "hero": {
+      "eyebrow": "Our Business",
+      "heading": "Built for Efficiency",
+      "image": "/src/assets/efcntpg.jpg"
+    },
+    "overview": "Efficiency is built through how consistently an operation performs, how intelligently its resources are used, and how well each stage of production is connected.\nAt HESL, this thinking is built into the design of our plant and strengthened through disciplined execution across operations. With planned infrastructure, controlled processes, and a strong focus on resource utilisation, we have created a structural cost advantage that supports one of the lowest production costs per metric tonne of Ferro Manganese in the Indian industry.",
+    "efficiencyFactors": {
+      "heading": "Systems that Drive Our Efficiency",
+      "blocks": [
+        {
+          "title": "Linear Plant Layout",
+          "description": "All 5 furnaces and the AOD converter are aligned within a single operating flow, reducing unnecessary handling and liquid-metal transfer time. This supports better heat retention, smoother refining, improved metal recovery, and lower energy costs per tonne of refined alloy."
+        },
+        {
+          "title": "Lowest Specific Power Consumption",
+          "description": "We operate at one of the lowest power-consumption levels per MT of Ferro Manganese in India. Use of Variable Frequency Drives (VFDs) on select continuous-duty motors, supported by regular energy audits, helps optimise power use across operations and eliminate further inefficiencies."
+        },
+        {
+          "title": "High Manganese Recovery",
+          "description": "Strong manganese recovery improves output from the same raw material input. Our Submerged Arc Furnace (SAF) operations achieve 80–85% manganese recovery, while Argon Oxygen Decarburisation (AOD) operations exceed 95%, supporting both yield and cost efficiency."
+        },
+        {
+          "title": "98%+ Plant Availability",
+          "description": "Preventive maintenance and critical spare planning help reduce avoidable downtime and support annual plant availability of over 98%. This enables more consistent production and better utilisation of fixed infrastructure."
+        },
+        {
+          "title": "Port-Proximate Raw Material Control",
+          "description": "Located around 120 km from Visakhapatnam Port, HESL benefits from lower raw material movement costs and stronger logistics control. A dedicated team at the port also helps monitor the quality of incoming ore before dispatch to the plant."
+        },
+        {
+          "title": "Automated AOD Operations",
+          "description": "Our Argon Oxygen Decarburisation (AOD) converter operates in fully automatic mode, supported by SOPs developed through in-house R&D, enabling better process control, consistent grade output, and reduced dependence on manual intervention."
+        }
+      ]
+    },
+    "byProductsIntro": "Materials that Extend Our Efficiency\nIn our integrated manufacturing system, efficiency continues beyond the main product stream. Materials generated during production are handled as part of our broader resource utilisation approach, supporting industrial applications while improving overall material efficiency.",
+    "items": [
+      {
+        "id": "ferro-manganese-slag",
+        "title": "Ferro Manganese Slag",
+        "image": "/src/assets/product-slag.jpg",
+        "intro": "Ferro Manganese Slag is a dense material generated during the smelting process as molten ferro manganese is tapped from the Submerged Arc Furnace. Its mineral composition confers physical and chemical properties that are actively sought by several downstream industries, especially for applications that require manganese-bearing material.",
+        "applications": [
+          {
+            "title": "Industrial Processing",
+            "description": "Used across industrial operations requiring manganese-bearing process material."
+          },
+          {
+            "title": "Road Construction & Infrastructure",
+            "description": "Used as an aggregate material in road base and sub-base layers, valued for its density, hardness, and load-bearing characteristics"
+          },
+          {
+            "title": "Cement & Construction Materials",
+            "description": "Used as a supplementary raw material in cement manufacturing, contributing to mineral composition and reducing dependence on virgin raw materials"
+          },
+          {
+            "title": "Secondary Manganese Recovery",
+            "description": "Processed as feedstock in secondary smelting operations to recover residual manganese content, particularly in markets where manganese ore is scarce or expensive"
+          },
+          {
+            "title": "Land Reclamation & Fill Material",
+            "description": "Used in controlled fill applications where material density and stability are required"
+          }
+        ]
+      },
+      {
+        "id": "mox-dust",
+        "title": "MOX Dust",
+        "image": "/src/assets/product-slag.jpg",
+        "intro": "MOX Dust is a fine, manganese oxide-rich powdered material captured from the furnace off-gas during high-temperature smelting operations in the submerged arc furnace. It is captured through our pollution control and dust recovery systems for utilisation across select industrial and downstream process applications.",
+        "applications": [
+          {
+            "title": "Secondary Smelting & Ferro Alloy Production",
+            "description": "Used as a supplementary manganese source in smelting operations, blended with primary ore to enhance furnace charge composition"
+          },
+          {
+            "title": "Mineral Processing & Recovery",
+            "description": "Processed through hydrometallurgical or pyrometallurgical routes to extract manganese content for chemical or metallurgical applications"
+          },
+          {
+            "title": "Industrial Chemical Production",
+            "description": "Production of dry cell batteries, fertilisers, and chemical compounds, where manganese is a required input."
+          }
+        ]
+      },
+      {
+        "id": "rejected-slag-dust",
+        "title": "Rejected Slag Dust",
+        "image": "/src/assets/product-slag.jpg",
+        "intro": "Rejected Slag Dust is a fine-grained material derived during slag crushing and sizing. It supports suitable downstream applications where slag-based mineral content can be productively used.",
+        "applications": [
+          {
+            "title": "Construction Material Use",
+            "description": "Used in construction-related applications, including aggregate and road-base material, subject to suitability and customer requirements."
+          },
+          {
+            "title": "Cement & Binder Applications",
+            "description": "Used in cement or binder-related applications depending on composition, processing, and end-use specifications."
+          },
+          {
+            "title": "Industrial Processing",
+            "description": "Suitable for downstream industrial processes where slag-based mineral material can be further handled, processed, or blended."
+          }
+        ]
+      }
+    ],
+    "navigation": {
+      "heading": "Explore Our Products",
+      "links": [
+        {
+          "title": "High Carbon Ferro Manganese",
+          "link": "/products/high-carbon-ferro-manganese"
+        },
+        {
+          "title": "Medium Carbon Ferro Manganese",
+          "link": "/products/medium-carbon-ferro-manganese"
+        },
+        {
+          "title": "Low Carbon Ferro Manganese",
+          "link": "/products/low-carbon-ferro-manganese"
+        }
+      ],
+      "backLink": {
+        "title": "Back to Business",
+        "link": "/business"
+      }
+    }
+  }
+}

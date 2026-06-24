@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { ProductCard } from "@/components/business/ProductsSection/ProductCard";
 import { QualityCard } from "@/components/business/ProductsSection/QualityCard";
 import { products, quality } from "@/components/business/ProductsSection/data";
+import websiteContent from "@/data/websiteContent.json";
 
 export function ProductsSection() {
+  const productsHeading = websiteContent.business.productsList.heading;
+  const qualityHeading = websiteContent.business.certifications.heading;
   return (
     <motion.section
       initial={{ opacity: 0, y: 80 }}
@@ -19,7 +22,7 @@ export function ProductsSection() {
             id="products-heading"
             className="mb-10 text-center font-poppins text-[clamp(1.75rem,4vw,3.125rem)] font-semibold leading-[110%] text-white md:mb-[60px]"
           >
-            Our Products
+            {productsHeading}
           </h2>
 
           <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:gap-[33px]">
@@ -33,7 +36,7 @@ export function ProductsSection() {
 
         <div className="mt-16 md:mt-[120px]">
           <h2 className="mb-10 text-center font-poppins text-[clamp(1.75rem,4vw,3.125rem)] font-semibold leading-[110%] text-white md:mb-[60px]">
-            Built Around Quality
+            {qualityHeading}
           </h2>
 
           <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10 lg:grid-cols-3">

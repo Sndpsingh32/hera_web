@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "@tanstack/react-router";
 import hiraLogo from "@/assets/hira_logo.jpg";
 import { FooterBottom } from "@/components/home/Footer/FooterBottom";
 import { FooterColumn } from "@/components/home/Footer/FooterColumn";
@@ -16,13 +17,13 @@ export function Footer() {
       <div className="section-container">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-[90px]">
           <div className="shrink-0">
-            <a href="/" className="inline-flex" aria-label="HIRA Electro Smelters home">
+            <Link to="/" className="inline-flex" aria-label="HIRA Electro Smelters home">
               <img
                 src={hiraLogo}
                 alt="HIRA Electro Smelters"
                 className="h-auto w-[180px] max-w-full object-contain sm:w-[220px]"
               />
-            </a>
+            </Link>
             <p className="mt-6 font-body text-[15px] leading-none font-normal text-white">
               {footerCopy.followPrefix}{" "}
               <a

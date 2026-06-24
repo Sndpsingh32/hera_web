@@ -3,7 +3,7 @@ import { Maximize, Boxes } from 'lucide-react';
 import rightImage from '@/assets/product.jpg';
 import { motion } from 'framer-motion';
 
-const specifications = [
+const defaultSpecifications = [
   { value: '65% – 78%', label: 'Manganese (Mn)' },
   { value: '6 – 8%', label: 'Carbon (C)' },
   { value: '1% Max', label: 'Silicon (Si)' },
@@ -11,7 +11,7 @@ const specifications = [
   { value: '0.05% Max', label: 'Sulphur (S)' },
 ];
 
-function SizeCard({ className = '' }: { className?: string }) {
+function SizeCard({ className = '', value = 'As per buyer requirements' }: { className?: string; value?: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -29,14 +29,14 @@ function SizeCard({ className = '' }: { className?: string }) {
           Size
         </h3>
         <p className="font-['Montserrat'] text-[15px] font-semibold leading-snug text-white sm:text-[18px] lg:text-[24px]">
-          As per buyer requirements
+          {value}
         </p>
       </div>
     </motion.div>
   );
 }
 
-function AppearanceCard({ className = '' }: { className?: string }) {
+function AppearanceCard({ className = '', value = 'Silver or dark grey lumps (10–100mm)' }: { className?: string; value?: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -54,14 +54,19 @@ function AppearanceCard({ className = '' }: { className?: string }) {
           Physical Appearance
         </h3>
         <p className="font-['Montserrat'] text-[13px] font-semibold leading-snug text-white sm:text-[14px] lg:text-[18px]">
-          Silver or dark grey lumps (10–100mm)
+          {value}
         </p>
       </div>
     </motion.div>
   );
 }
 
-export function SpecificationSection() {
+export function SpecificationSection({ product }: { product?: any }) {
+  const specsData = product?.specifications || defaultSpecifications;
+  const mainSpecs = specsData.filter((s: any) => s.label !== 'Size' && s.label !== 'Physical Appearance');
+  const sizeSpec = specsData.find((s: any) => s.label === 'Size');
+  const appearanceSpec = specsData.find((s: any) => s.label === 'Physical Appearance');
+
   return (
     <section className="relative flex w-full flex-col overflow-hidden bg-[#000000] md:h-[868px] md:flex-row">
       {/* Specifications */}
@@ -77,7 +82,7 @@ export function SpecificationSection() {
             Specifications
           </motion.h2>
           <div className="flex flex-col gap-[30px]">
-            {specifications.map((spec, i) => (
+            {mainSpecs.map((spec: any, i: number) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 32 }}
@@ -103,8 +108,8 @@ export function SpecificationSection() {
 
       {/* Mobile / tablet cards — in document flow */}
       <div className="grid w-full grid-cols-2 gap-3 px-5 pb-6 sm:gap-4 md:hidden">
-        <SizeCard />
-        <AppearanceCard />
+        {sizeSpec && <SizeCard value={sizeSpec.value} />}
+        {appearanceSpec && <AppearanceCard value={appearanceSpec.value} />}
       </div>
 
       {/* Image */}
@@ -124,8 +129,8 @@ export function SpecificationSection() {
 
       {/* Desktop floating cards */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 z-10 hidden -translate-x-[40%] -translate-y-1/2 flex-col gap-[30px] md:flex">
-        <SizeCard className="pointer-events-auto w-[250px]" />
-        <AppearanceCard className="pointer-events-auto w-[250px]" />
+        {sizeSpec && <SizeCard className="pointer-events-auto w-[250px]" value={sizeSpec.value} />}
+        {appearanceSpec && <AppearanceCard className="pointer-events-auto w-[250px]" value={appearanceSpec.value} />}
       </div>
     </section>
   );

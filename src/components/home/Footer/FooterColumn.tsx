@@ -1,4 +1,5 @@
 import { ChevronDown } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 import type { FooterColumnData } from "@/components/home/Footer/footerData";
 
 function FooterLinks({ links }: Pick<FooterColumnData, "links">) {
@@ -6,12 +7,12 @@ function FooterLinks({ links }: Pick<FooterColumnData, "links">) {
     <ul className="space-y-[18px]">
       {links.map((link) => (
         <li key={link.label}>
-          <a
-            href={link.href}
+          <Link
+            to={link.href}
             className="font-body text-[15px] leading-none font-normal text-white/75 transition-colors duration-300 hover:text-[#EB1E28] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EB1E28]"
           >
             {link.label}
-          </a>
+          </Link>
         </li>
       ))}
     </ul>

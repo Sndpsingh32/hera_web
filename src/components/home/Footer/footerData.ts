@@ -12,24 +12,26 @@ export const footerColumns: FooterColumnData[] = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "#" },
+      { label: "About Us", href: "/about" },
       { label: "Our Journey", href: "#" },
-      { label: "Leadership", href: "#" },
+      { label: "Our Leadership", href: "/people" },
     ],
   },
   {
     title: "Business",
     links: [
-      { label: "High Carbon Ferro Manganese", href: "#" },
-      { label: "Medium Carbon Ferro Manganese", href: "#" },
-      { label: "Low Carbon Ferro Manganese", href: "#" },
+      { label: "Business Overview", href: "/business" },
+      { label: "Our Products", href: "/sustainability" },
+      { label: "High Carbon Ferro Manganese", href: "/products/high-carbon-ferro-manganese" },
+      { label: "Medium Carbon Ferro Manganese", href: "/products/medium-carbon-ferro-manganese" },
+      { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "People", href: "#" },
       { label: "Sustainability", href: "#" },
+      { label: "By-Products", href: "/by-products" },
     ],
   },
   {
