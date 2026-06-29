@@ -24,15 +24,7 @@ export function Footer() {
                 className="h-auto w-[180px] max-w-full object-contain sm:w-[220px]"
               />
             </Link>
-            <p className="mt-6 font-body text-[15px] leading-none font-normal text-white">
-              {footerCopy.followPrefix}{" "}
-              <a
-                href="#"
-                className="text-[#EB1E28] transition-colors duration-300 hover:text-[#ff4a52] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EB1E28]"
-              >
-                {footerCopy.linkedIn}
-              </a>
-            </p>
+
           </div>
 
           <div className="grid flex-1 grid-cols-1 gap-0 sm:grid-cols-2 lg:grid-cols-3 lg:gap-[60px]">

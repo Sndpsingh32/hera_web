@@ -15,7 +15,7 @@ function Textarea(props: TextareaHTMLAttributes<HTMLTextAreaElement>) {
       {...props}
       className={cn(
         fieldClassName,
-        "h-[50px] resize-none py-4 leading-normal",
+        "h-[50px] resize-none overflow-hidden py-4 leading-normal",
         props.className,
       )}
     />
