@@ -84,7 +84,7 @@ export function JourneySection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="flex flex-col lg:sticky lg:top-[120px] z-20"
+            className="flex flex-col lg:sticky lg:top-[50px] z-20"
           >
             <span className="font-display font-semibold text-[16px] lg:text-[20px] text-white uppercase tracking-wider mb-[16px]">
               OUR JOURNEY
@@ -102,7 +102,7 @@ export function JourneySection() {
           </motion.div>
 
           {/* Column 2: Image Gallery */}
-          <div className="flex flex-col items-center gap-[80px] lg:gap-[130px] z-10">
+          <div className="flex flex-col items-center gap-[80px] lg:gap-[130px] lg:mt-[45px] z-10">
             {galleryImages.map((src, index) => (
               <motion.div
                 key={index}
@@ -111,7 +111,7 @@ export function JourneySection() {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-20%" }}
                 className="w-full max-w-[550px] overflow-hidden rounded-[10px]"
-                // Parallax margin removed to guarantee 1:1 strict horizontal alignment with timeline
+              // Parallax margin removed to guarantee 1:1 strict horizontal alignment with timeline
               >
                 <img
                   src={src}
@@ -128,7 +128,7 @@ export function JourneySection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="flex flex-col lg:pl-[20px] w-full"
+            className="flex flex-col lg:pl-[20px] lg:pr-[80px] w-full"
           >
             {/* The vertical line container - mathematically sized to exactly match the 4 images (1870px) */}
             <div className="relative border-l-2 border-[#303030] flex flex-col lg:block lg:h-[1870px] py-[20px] lg:py-0">

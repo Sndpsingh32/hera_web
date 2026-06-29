@@ -6,6 +6,7 @@ import { Business } from "@/components/home/Business";
 import { Efficient } from "@/components/home/Efficient";
 import { Contact } from "@/components/home/Contact";
 import { Footer } from "@/components/home/Footer";
+import globalBg from "@/assets/globalbg.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,8 +25,18 @@ function Index() {
       <Intro />
       <Stats />
       <Business />
-      <Efficient />
-      <Contact />
+      <div className="relative w-full">
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${globalBg})` }}
+          aria-hidden
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 to-black/60" aria-hidden />
+        <div className="relative z-10">
+          <Efficient />
+          <Contact />
+        </div>
+      </div>
       <Footer />
     </div>
   );

@@ -30,9 +30,9 @@ export default function EfficientDesign({
   return (
     <section
       aria-labelledby="efficient-design-title"
-      className="bg-[#050505] py-[60px] md:py-[80px] lg:py-[120px]"
+      className="relative pt-[60px] pb-0 md:pt-[80px] lg:pt-[120px] lg:pb-0"
     >
-      <div className="mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-0">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-5 md:px-8 lg:px-0">
         <div className="grid grid-cols-1 items-start gap-6 md:grid-cols-2 md:gap-6 lg:h-[577px] lg:grid-cols-[536px_1fr] lg:gap-[40px]">
           <article className="grid h-auto min-h-[577px] w-full max-w-[536px] grid-rows-[auto_1fr] justify-self-center overflow-hidden rounded-[10px] border border-[rgba(255,255,255,0.05)] bg-[#0F0F0F] md:max-w-none md:justify-self-stretch lg:h-[577px] lg:w-[536px]">
             <header className="grid grid-cols-[minmax(0,1fr)_80px]">

@@ -31,7 +31,7 @@ export function ContactSection({ embedded = false, overlap = false }: ContactSec
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.05]"
       />
       <div
-        className="absolute inset-0 bg-[rgba(0,0,0,0.55)] backdrop-blur-[1px]"
+        className="absolute inset-0 bg-[rgba(0,0,0,0.8)] backdrop-blur-[1px]"
         aria-hidden
       />
 
@@ -125,7 +125,7 @@ export function ContactSection({ embedded = false, overlap = false }: ContactSec
   return (
     <section
       aria-labelledby="contact-visible-heading"
-      className="bg-[#050505] pt-12 pb-0 lg:pt-16"
+      className="relative pt-8 pb-0 lg:pt-[40px]"
     >
       <div className="section-container">{content}</div>
     </section>
