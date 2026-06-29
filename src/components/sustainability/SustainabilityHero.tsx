@@ -17,7 +17,7 @@ export function SustainabilityHero({ product }: { product?: any }) {
         height={1002}
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/0 to-black/[0.31]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.1)_45%,rgba(0,0,0,0.85)_100%)]" />
 
       <div className="section-container relative flex h-full min-h-[560px] flex-col items-center justify-center pt-[72px] pb-16 text-center text-white lg:pt-[110px] lg:pb-20">
         <motion.h1
@@ -32,7 +32,7 @@ export function SustainabilityHero({ product }: { product?: any }) {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mt-5 max-w-[900px] font-body text-[clamp(0.9375rem,2vw,1.25rem)] font-normal leading-[140%] md:mt-6"
+          className="mt-5 w-full max-w-[1100px] font-body text-[16px] font-normal leading-[160%] text-white/90 lg:text-[18px] md:mt-6"
         >
           {overview}
         </motion.p>

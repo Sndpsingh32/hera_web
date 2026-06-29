@@ -35,7 +35,7 @@ function ProductPage() {
       <SustainabilityHero product={product} />
       <SpecificationSection product={product} />
       <ProductApplications product={product} />
-      <OurClients />
+      {/* <OurClients /> */}
       <ContactSection />
       <BusinessFooter />
     </div>
