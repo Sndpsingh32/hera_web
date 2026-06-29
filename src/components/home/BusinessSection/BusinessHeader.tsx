@@ -2,7 +2,7 @@
 
 export function BusinessHeader() {
   return (
-    <header className="mx-auto flex max-w-[1060px] flex-col items-center text-center">
+    <header className="mx-auto flex max-w-[1060px] flex-col items-center text-center pt-8 lg:pt-12">
       <h2
         id="business-section-heading"
         className="font-poppins text-[clamp(2rem,4vw,3.125rem)] leading-[100%] font-semibold text-white"

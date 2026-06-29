@@ -48,7 +48,7 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
         }
       }}
       className={cn(
-        "relative shrink-0 snap-center overflow-hidden rounded-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white cursor-pointer",
+        "relative shrink-0 snap-center overflow-hidden rounded-[8px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white cursor-pointer transition-all duration-500 ease-out",
         "h-[380px] w-[280px] lg:h-[min(420px,calc(100vh-420px))] lg:w-[140px] xl:h-[420px] xl:w-[160px]",
         isActive && "lg:w-[300px] xl:w-[350px]",
       )}
