@@ -8,9 +8,6 @@ export const contactCopy = {
   },
   phone: "+91 8944247008",
   emails: [
-    { label: "Admin", email: "admin@heslindia.com" },
-    { label: "CFO", email: "cfo@heslindia.com" },
-    { label: "CS", email: "compliance@heslindia.com" },
     { label: "HR", email: "hr@heslindia.com" },
   ]
 } as const;
