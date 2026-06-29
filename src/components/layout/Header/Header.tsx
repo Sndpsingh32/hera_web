@@ -3,7 +3,6 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, Search } from "lucide-react";
 import { motion } from "framer-motion";
 import hiraLogo from "@/assets/hira_logo.jpg";
-import { HeaderButton } from "@/components/layout/Header/HeaderButton";
 import { MobileDrawer } from "@/components/layout/Header/MobileDrawer";
 import { NavbarDropdown } from "@/components/layout/Header/NavbarDropdown";
 import { navItems } from "@/components/layout/Header/navData";
@@ -58,15 +57,6 @@ export function Header() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-3 lg:gap-4">
-            <button
-              type="button"
-              aria-label="Search website"
-              className="hidden h-10 w-10 items-center justify-center text-white transition-colors duration-300 hover:text-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white xl:flex"
-            >
-              <Search className="h-5 w-5" strokeWidth={1.8} />
-            </button>
-
-            <HeaderButton />
 
             <button
               type="button"

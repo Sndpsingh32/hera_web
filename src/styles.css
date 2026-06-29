@@ -42,7 +42,6 @@
   body {
     background: var(--color-background);
     color: var(--color-foreground);
-    overflow-x: hidden;
     min-width: 320px;
   }
 }
@@ -51,7 +50,6 @@
   .page-shell {
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden;
   }
 
   .section-container {
