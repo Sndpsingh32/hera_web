@@ -4,7 +4,7 @@ import { manufacturingStats } from "@/components/business/ManufacturingHighlight
 export function ManufacturingStats() {
   return (
     <div
-      className="flex w-full flex-col items-center gap-10 md:gap-14 lg:w-[45%] lg:items-start lg:gap-[70px]"
+      className="flex w-full flex-col items-center gap-10 md:gap-14 lg:w-[45%] lg:items-start lg:gap-[40px]"
       aria-label="Manufacturing statistics"
     >
       {manufacturingStats.map((stat, index) => (

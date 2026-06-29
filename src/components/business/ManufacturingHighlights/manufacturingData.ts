@@ -4,7 +4,6 @@ import containers from "@/assets/containers.jpg";
 export type ManufacturingStatItem = {
   value: string;
   label: string;
-  description: string;
 };
 
 export type HighlightCardItem = {
@@ -16,29 +15,27 @@ export type HighlightCardItem = {
 
 export const manufacturingStats: ManufacturingStatItem[] = [
   {
-    value: "25+",
-    label: "Countries Served Globally",
-    description:
-      "Trusted suppliers ensures consistent raw material quality for stable production",
-  },
-  {
     value: "83,682 MT",
     label: "Annual Ferro Alloys Manufacturing Capacity",
-    description:
-      "Large scale manufacturing projects each year with proven delivery timelines",
   },
   {
     value: "5,500+ MT",
     label: "Monthly Export Volume",
-    description:
-      "Large scale manufacturing projects each year with proven delivery timelines",
+  },
+  {
+    value: "90%+",
+    label: "Capacity Utilisation",
+  },
+  {
+    value: "25+ Countries",
+    label: "Served Globally",
   },
 ];
 
 export const highlightCards: HighlightCardItem[] = [
   {
-    title: "Largest Indian Producer",
-    subtitle: "of MC & LC FeMn",
+    title: "Largest",
+    subtitle: "Indian Producer of MC & LC FeMn",
     image: statPlant,
     imageAlt: "Steel manufacturing plant aerial view",
   },
@@ -50,4 +47,4 @@ export const highlightCards: HighlightCardItem[] = [
   },
 ];
 
-export const STAT_ANIMATION_DELAYS = [0.15, 0.25, 0.35] as const;
+export const STAT_ANIMATION_DELAYS = [0.15, 0.25, 0.35, 0.45] as const;

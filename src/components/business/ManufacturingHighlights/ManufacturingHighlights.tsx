@@ -11,7 +11,7 @@ export function ManufacturingHighlights() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="relative w-full overflow-hidden lg:min-h-[900px]"
+      className="relative w-full overflow-hidden lg:min-h-[600px]"
       aria-labelledby="manufacturing-highlights-heading"
     >
       <img
@@ -29,7 +29,7 @@ export function ManufacturingHighlights() {
         aria-hidden
       />
 
-      <div className="section-container relative z-10 py-16 md:py-20 lg:py-[100px]">
+      <div className="section-container relative z-10 py-16 md:py-20 lg:py-[60px] xl:py-[80px]">
         <h2 id="manufacturing-highlights-heading" className="sr-only">
           Manufacturing Excellence
         </h2>

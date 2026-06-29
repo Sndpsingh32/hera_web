@@ -45,7 +45,7 @@ export function BusinessIntro() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="mx-auto mt-8 max-w-[900px] font-body text-[clamp(0.9375rem,2vw,1.5rem)] font-normal leading-[160%] text-white/[0.85] md:mt-10"
+          className="mx-auto mt-8 w-full max-w-[1210px] font-body text-[16px] lg:text-[20px] font-normal leading-[160%] text-white/[0.85] md:mt-10"
         >
           Hira Electro Smelters Limited (HESL) is an integrated ferro alloys manufacturer
           supplying High Carbon, Medium Carbon, and Low Carbon Ferro Manganese to steel producers

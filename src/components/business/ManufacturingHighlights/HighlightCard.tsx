@@ -12,7 +12,7 @@ export function HighlightCard({ title, subtitle, image, imageAlt, index }: Highl
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.9, ease: "easeOut" }}
-      className="group relative h-[220px] w-full overflow-hidden rounded-xl transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)] sm:h-[260px] lg:h-[300px]"
+      className="group relative h-[220px] w-full overflow-hidden rounded-xl transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.35)] sm:h-[260px] lg:h-[230px] xl:h-[260px]"
     >
       <img
         src={image}
@@ -33,7 +33,7 @@ export function HighlightCard({ title, subtitle, image, imageAlt, index }: Highl
       />
 
       <div className="absolute bottom-6 left-6 transition-transform duration-500 ease-out group-hover:-translate-y-2">
-        <h3 className="font-poppins text-[clamp(1.25rem,3vw,2.375rem)] font-semibold leading-[110%] text-white">
+        <h3 className="font-poppins text-base font-semibold leading-[110%] text-white lg:text-xl">
           {title}
         </h3>
         <p className="mt-1 font-poppins text-base font-semibold leading-[100%] text-white/90 lg:text-xl">
