@@ -6,7 +6,7 @@ export function BusinessSection() {
   return (
     <section
       aria-labelledby="business-section-heading"
-      className="relative w-full overflow-hidden py-[60px] md:py-20 lg:py-[120px]"
+      className="relative flex w-full flex-col justify-center overflow-hidden py-[60px] md:py-16 lg:h-[calc(100vh-110px)] lg:py-0"
     >
       <img
         src={businessBackground}
@@ -20,7 +20,7 @@ export function BusinessSection() {
 
       <div className="absolute inset-0 bg-[rgba(0,0,0,0.72)]" aria-hidden />
 
-      <div className="section-container relative z-10 w-full">
+      <div className="section-container relative z-10 flex h-full w-full flex-col justify-center py-10">
         <BusinessHeader />
         <ProductShowcase />
       </div>

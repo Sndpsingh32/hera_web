@@ -1,4 +1,4 @@
-import { Button } from "@/components/home/BusinessSection/Button";
+
 
 export function BusinessHeader() {
   return (
@@ -10,15 +10,13 @@ export function BusinessHeader() {
         Our Business
       </h2>
 
-      <p className="mt-6 max-w-[1060px] font-body text-[clamp(0.9375rem,2vw,1.5rem)] leading-[160%] font-normal text-white/85">
+      <p className="mt-4 max-w-[1060px] font-body text-[clamp(0.9375rem,2vw,1.5rem)] leading-[160%] font-normal text-white/85 xl:mt-6">
         Our product portfolio is built to serve varied steelmaking requirements, with Ferro
         Manganese grades that support strength, hardness, carbon control, and metallurgical
         consistency.
       </p>
 
-      <div className="mt-10">
-        <Button label="EXPLORE OUR PRODUCTS" aria-label="Explore our products" />
-      </div>
+
     </header>
   );
 }
