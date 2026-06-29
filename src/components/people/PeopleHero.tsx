@@ -31,7 +31,7 @@ export function PeopleHero() {
       </section>
 
       {/* Intro Text Section */}
-      <section className="w-full bg-[#000000] py-[80px] lg:py-[120px]">
+      <section className="w-full bg-[#000000] pt-[80px] pb-[40px] lg:pt-[120px] lg:pb-[60px]">
         <div className="w-full max-w-[1400px] mx-auto px-5 lg:px-10 flex flex-col items-center text-center">
           <motion.div
             variants={fadeUpVariants}
@@ -46,7 +46,7 @@ export function PeopleHero() {
             </h2>
             
             {/* Subtext */}
-            <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[1.6] text-white/90 max-w-[1000px]">
+            <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[1.6] text-white/90 w-full max-w-[1210px]">
               Every strong business is shaped by the people who set its direction. At HESL, our leadership provides the foundation for disciplined operations, stronger governance, and steady progress. Their role is to guide the company with clarity, build confidence across stakeholders, and prepare the organisation for its next phase of growth.
             </p>
           </motion.div>

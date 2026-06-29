@@ -36,7 +36,7 @@ export function LeadershipSection() {
   const currentData = activeTab === "board" ? boardDirectors : internalCommittees;
 
   return (
-    <section className="relative w-full py-[80px] lg:py-[120px] overflow-hidden bg-black">
+    <section className="relative w-full pt-[40px] pb-[80px] lg:pt-[60px] lg:pb-[120px] overflow-hidden bg-black">
 
       {/* Background Image with Dark Overlay */}
       <div
@@ -97,7 +97,7 @@ export function LeadershipSection() {
               : "text-white font-medium hover:bg-white/[0.05]"
               }`}
           >
-            Board of Directors
+            Key Management
           </button>
           <button
             onClick={() => setActiveTab("committees")}
@@ -106,7 +106,7 @@ export function LeadershipSection() {
               : "text-white font-medium hover:bg-white/[0.05]"
               }`}
           >
-            Internal Committees
+            Senior Management
           </button>
         </motion.div>
 
