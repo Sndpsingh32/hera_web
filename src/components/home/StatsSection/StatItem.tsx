@@ -14,7 +14,7 @@ export function StatItem({ number, heading, description, index, delay }: StatIte
       viewport={{ once: true, amount: 0.35 }}
       transition={{ duration: 0.75, delay, ease: "easeOut" }}
       aria-labelledby={`stat-heading-${index}`}
-      className="mx-auto flex w-full max-w-[440px] items-stretch gap-[20px] lg:mx-0"
+      className="mx-auto flex w-full max-w-[500px] items-stretch gap-[20px] lg:mx-0"
     >
       <div className="w-[2px] shrink-0 self-stretch bg-[#EB1E28]" aria-hidden />
 
@@ -28,7 +28,7 @@ export function StatItem({ number, heading, description, index, delay }: StatIte
         >
           {heading}
         </h3>
-        <p className="mt-2 max-w-[440px] font-body text-[15px] leading-[150%] font-normal text-white/80 lg:text-[16px]">
+        <p className="mt-2 max-w-[500px] font-body text-[15px] leading-[150%] font-normal text-white/80 lg:text-[16px]">
           {description}
         </p>
       </div>

@@ -33,7 +33,7 @@ export function ImageCard({ image, imageAlt, title, subtitle, index, delay }: Im
       <div className="absolute bottom-0 left-0 p-6 text-white">
         <h3
           id={`card-title-${index}`}
-          className="font-poppins text-[26px] leading-[100%] font-semibold lg:text-[38px]"
+          className="font-poppins text-[18px] leading-[100%] font-semibold lg:text-[26px]"
         >
           {title}
         </h3>
