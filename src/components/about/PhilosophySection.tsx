@@ -65,7 +65,7 @@ export function PhilosophySection() {
           variants={fadeUpVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="w-full flex flex-col items-center text-center mb-[60px] lg:mb-[80px]"
         >
           <h2 className="font-display font-semibold text-[36px] lg:text-[50px] text-white mb-6">
@@ -81,7 +81,7 @@ export function PhilosophySection() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-[80px] lg:mb-[100px]"
         >
           {cards.map((card, idx) => (
@@ -109,7 +109,7 @@ export function PhilosophySection() {
           variants={slideUpVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "0px" }}
           className="w-full flex flex-col lg:flex-row items-center gap-[50px] lg:gap-[100px]"
         >
           {/* Left Content */}

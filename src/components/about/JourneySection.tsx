@@ -76,14 +76,14 @@ export function JourneySection() {
       <div className="w-full max-w-[1728px] mx-auto px-5 lg:px-10">
 
         {/* 3-Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr_0.9fr] gap-[50px] lg:gap-[60px] items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(300px,450px)_minmax(380px,1.2fr)] 2xl:grid-cols-[1fr_550px_1fr] gap-[40px] xl:gap-[60px] items-start">
 
           {/* Column 1: Story Content (Sticky) */}
           <motion.div
             variants={slideLeft}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, margin: "0px" }}
             className="flex flex-col lg:sticky lg:top-[50px] z-20"
           >
             <span className="font-display font-semibold text-[16px] lg:text-[20px] text-white uppercase tracking-wider mb-[16px]">
@@ -109,7 +109,7 @@ export function JourneySection() {
                 variants={imageReveal}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-20%" }}
+                viewport={{ once: true, margin: "0px" }}
                 className="w-full max-w-[550px] overflow-hidden rounded-[10px]"
               // Parallax margin removed to guarantee 1:1 strict horizontal alignment with timeline
               >
@@ -127,31 +127,21 @@ export function JourneySection() {
             variants={slideRight}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            className="flex flex-col lg:pl-[20px] lg:pr-[80px] w-full"
+            viewport={{ once: true, margin: "0px" }}
+            className="flex flex-col lg:pl-[20px] lg:pr-[20px] w-full"
           >
-            {/* The vertical line container - mathematically sized to exactly match the 4 images (1870px) */}
-            <div className="relative border-l-2 border-[#303030] flex flex-col lg:block lg:h-[1870px] py-[20px] lg:py-0">
+            {/* The vertical line container - lets it grow naturally based on content */}
+            <div className="relative border-l-2 border-[#303030] flex flex-col py-[20px] lg:py-0">
 
               {timelineData.map((item, index) => {
-                // Exact 250px vertical rhythm to mathematically align with the 500px image rhythm
-                const desktopTopClasses = [
-                  "lg:top-[0px]",
-                  "lg:top-[250px]",
-                  "lg:top-[500px]",
-                  "lg:top-[750px]",
-                  "lg:top-[1000px]",
-                  "lg:top-[1250px]",
-                  "lg:top-[1500px]"
-                ];
 
                 return (
                   <motion.div
                     key={index}
-                    className={`relative lg:absolute w-full pl-[40px] lg:pl-[50px] flex flex-col mb-[50px] lg:mb-0 ${desktopTopClasses[index]}`}
+                    className="relative w-full pl-[40px] lg:pl-[50px] flex flex-col mb-[50px] lg:mb-[70px]"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, margin: "-20%" }}
+                    viewport={{ once: true, margin: "0px" }}
                   >
                     {/* Timeline Dot: detached from the line and acting as a bullet point as per Figma */}
                     <motion.div
@@ -160,14 +150,14 @@ export function JourneySection() {
                     />
 
                     {/* Content */}
-                    <div className="flex flex-col">
-                      <span className="font-display font-semibold text-[36px] lg:text-[50px] leading-[1] lg:leading-[45px] text-[#EB1E28] mb-[12px]">
+                    <div className="flex flex-col max-w-[290px]">
+                      <span className="font-display font-semibold text-[36px] lg:text-[50px] leading-[1] lg:leading-[45px] text-[#EB1E28] mb-[15px]">
                         {item.year}
                       </span>
-                      <h3 className="font-display font-semibold text-[20px] lg:text-[24px] text-white mb-[8px]">
+                      <h3 className="font-display font-semibold text-[20px] lg:text-[24px] leading-[1.2] lg:leading-[45px] text-white mb-[6px]">
                         {item.title}
                       </h3>
-                      <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[1.5] text-white/90">
+                      <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[1.5] lg:leading-[1] text-white/90">
                         {item.description}
                       </p>
                     </div>
