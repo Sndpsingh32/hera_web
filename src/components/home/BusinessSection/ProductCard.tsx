@@ -12,11 +12,12 @@ type ProductCardProps = {
 export function ProductCard({ product, isActive, onActivate }: ProductCardProps) {
   const titleContent = product.titleLines ? (
     <>
-      {product.titleLines[0]}
-      <br />
-      {product.titleLines[1]}
-      <br />
-      {product.titleLines[2]}
+      {product.titleLines.filter(line => line.trim() !== "").map((line, i, arr) => (
+        <span key={i}>
+          {line}
+          {i < arr.length - 1 && <br />}
+        </span>
+      ))}
     </>
   ) : (
     product.title
@@ -75,8 +76,8 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
             </div>
           </div>
 
-          <div className="mb-4 xl:mb-6 flex h-[100px] xl:h-[125px] w-[258px] max-w-[calc(100%-16px)] xl:max-w-[calc(100%-24px)] items-center justify-center rounded-[8px] bg-white px-3">
-            <p className="text-center font-body text-[16px] xl:text-[20px] leading-[100%] font-bold tracking-normal text-[#111111]">
+          <div className="mb-4 xl:mb-6 flex h-[100px] xl:h-[125px] w-[258px] max-w-[calc(100%-16px)] xl:max-w-[calc(100%-24px)] items-center justify-center rounded-[8px] bg-white px-3 py-2">
+            <p className="text-center font-body text-[16px] xl:text-[20px] leading-[130%] font-bold tracking-normal text-[#111111]">
               {titleContent}
             </p>
           </div>

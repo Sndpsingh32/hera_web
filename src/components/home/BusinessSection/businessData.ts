@@ -20,19 +20,21 @@ export const products: Product[] = [
   {
     id: 1,
     title: "High Carbon Ferro Manganese (HC FeMn)",
-    titleLines: ["High Carbon Ferro", "Manganese", "(HC FeMn)"],
+    titleLines: ["High Carbon", "Ferro Manganese", ""],
     image: productHc,
     link: "/products/high-carbon-ferro-manganese",
   },
   {
     id: 2,
     title: "Medium Carbon Ferro Manganese",
+    titleLines: ["Medium Carbon", "Ferro Manganese", ""],
     image: productCoal,
     link: "/products/medium-carbon-ferro-manganese",
   },
   {
     id: 3,
     title: "Low Carbon Ferro Manganese",
+    titleLines: ["Low Carbon", "Ferro Manganese", ""],
     image: productOre,
     link: "/products/low-carbon-ferro-manganese",
   },

@@ -20,21 +20,21 @@ export const statsBackground = backgroundImage;
 export const statItems: StatItemData[] = [
   {
     number: "25+",
-    heading: "",
+    heading: "Countries Served Globally",
     description:
-      "Trusted suppliers ensures consistent raw material quality for stable production",
+      "",
   },
   {
     number: "83,682 MT",
     heading: "Annual Ferro Alloys Manufacturing Capacity",
     description:
-      "Large scale manufacturing projects each year with proven delivery timelines",
+      "",
   },
   {
     number: "5,500+ MT",
     heading: "Monthly Export Volume",
     description:
-      "Large scale manufacturing projects each year with proven delivery timelines",
+      "",
   },
 ];
 
