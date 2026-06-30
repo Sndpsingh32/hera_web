@@ -19,9 +19,9 @@ export function DirectorCard({ director }: DirectorCardProps) {
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
       />
 
-      {/* Red Gradient Overlay (Increased height to ensure text readability for long bios) */}
+      {/* Red Gradient Overlay (Increased height on hover for text readability) */}
       <div 
-        className="absolute bottom-0 left-0 right-0 h-[70%]"
+        className="absolute bottom-0 left-0 right-0 h-[60%] transition-all duration-500 ease-out group-hover:h-[85%]"
         style={{
           background: "linear-gradient(to top, rgba(226,50,44,0.95) 0%, rgba(226,50,44,0.7) 40%, rgba(226,50,44,0) 100%)"
         }}
@@ -29,18 +29,26 @@ export function DirectorCard({ director }: DirectorCardProps) {
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 right-0 p-[32px] flex flex-col justify-end">
-        <h3 className="font-display font-bold text-[20px] text-white leading-tight mb-[4px]">
-          {director.name}
-        </h3>
-        <p className="font-body font-semibold text-[16px] text-white mb-[12px]">
-          {director.designation}
-        </p>
-        
-        {/* Full Bio visible as per Figma (Only rendered if it exists) */}
-        {director.description && (
-          <p className="font-body font-semibold text-[16px] text-white/90 leading-none">
-            {director.description}
+        <div className="transform transition-transform duration-500 ease-out group-hover:-translate-y-2">
+          <h3 className="font-display font-bold text-[20px] text-white leading-tight mb-[4px]">
+            {director.name}
+          </h3>
+          <p className="font-body font-semibold text-[16px] text-white">
+            {director.designation}
           </p>
+        </div>
+        
+        {/* Full Bio visible on hover */}
+        {director.description && (
+          <div className="grid grid-rows-[0fr] opacity-0 group-hover:grid-rows-[1fr] group-hover:opacity-100 transition-all duration-500 ease-out">
+            <div className="overflow-hidden">
+              <div className="pt-[12px]">
+                <p className="font-body font-normal text-[15px] text-white/90 leading-[1.6]">
+                  {director.description}
+                </p>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </motion.div>

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { DirectorCard } from "./DirectorCard";
-import { boardDirectors, internalCommittees } from "@/data/leadershipData";
+import { boardDirectors, seniorManagement } from "@/data/leadershipData";
 import bgImage from "@/assets/leaderbg.jpg";
 import founderImage from "@/assets/leaderm.png";
 
@@ -33,7 +33,7 @@ const cardFade = {
 export function LeadershipSection() {
   const [activeTab, setActiveTab] = useState<"board" | "committees">("board");
 
-  const currentData = activeTab === "board" ? boardDirectors : internalCommittees;
+  const currentData = activeTab === "board" ? boardDirectors : seniorManagement;
 
   return (
     <section className="relative w-full pt-[40px] pb-[80px] lg:pt-[60px] lg:pb-[120px] overflow-hidden bg-black">
