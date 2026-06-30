@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import useEmblaCarousel from "embla-carousel-react";
 import { cn } from "@/lib/utils";
 import { heroSlides } from "@/components/home/heroSlides";
@@ -59,9 +60,9 @@ export function Hero() {
                   <br />
                   {slide.titleLines[1]}
                 </h1>
-                <button className="mt-6 sm:mt-8 mx-auto flex h-[44px] w-full max-w-[226px] items-center justify-center rounded-[6px] bg-[#EB1E28] font-body text-[13px] leading-[100%] font-semibold tracking-[0.01em] text-white uppercase transition hover:opacity-90 sm:h-[50px] sm:text-[14px]">
+                <Link to={slide.ctaLink} className="mt-6 sm:mt-8 mx-auto flex h-[44px] w-full max-w-[226px] items-center justify-center rounded-[6px] bg-[#EB1E28] font-body text-[13px] leading-[100%] font-semibold tracking-[0.01em] text-white uppercase transition hover:opacity-90 sm:h-[50px] sm:text-[14px]">
                   {slide.cta}
-                </button>
+                </Link>
               </div>
             </div>
           ))}

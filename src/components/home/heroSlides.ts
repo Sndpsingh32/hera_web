@@ -7,6 +7,7 @@ export type HeroSlide = {
   imageAlt: string;
   titleLines: [string, string];
   cta: string;
+  ctaLink: string;
 };
 
 export const heroSlides: HeroSlide[] = [
@@ -15,17 +16,20 @@ export const heroSlides: HeroSlide[] = [
     imageAlt: "Ferro alloy furnace",
     titleLines: ["Ferro Alloys Built for the", "Steel Value Chain"],
     cta: "KNOW MORE ABOUT US",
+    ctaLink: "/about",
   },
   {
     image: efficientFurnace,
     imageAlt: "Efficient smelting operations",
     titleLines: ["Efficient Manufacturing", "for Global Markets"],
     cta: "EXPLORE OUR BUSINESS",
+    ctaLink: "/business",
   },
   {
     image: plantAerial,
     imageAlt: "Hira plant aerial view",
     titleLines: ["India's Leading", "Ferro Alloys Producer"],
-    cta: "KNOW MORE ABOUT US",
+    cta: "EXPLORE PRODUCTS",
+    ctaLink: "/products/high-carbon-ferro-manganese",
   },
 ];
