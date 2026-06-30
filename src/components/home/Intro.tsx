@@ -29,7 +29,7 @@ export function Intro() {
         </div>
 
         <div className="relative min-h-[280px] w-full sm:min-h-[360px] lg:w-5/12">
-          <div className="absolute left-1/2 h-full w-[100vw] -translate-x-1/2 lg:left-0 lg:translate-x-0">
+          <div className="absolute left-1/2 h-full w-[100vw] -translate-x-1/2 lg:left-0 lg:w-[calc(50vw-20%)] lg:translate-x-0">
             <img
               src={plantAerial}
               alt="Hira plant aerial view"
