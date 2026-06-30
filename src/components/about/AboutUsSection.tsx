@@ -42,9 +42,9 @@ export function AboutUsSection() {
                 <span className="block font-display text-[16px] lg:text-[18px] font-semibold uppercase text-white mb-[4px] tracking-wider">
                   OUR MOTTO
                 </span>
-                {/* Reduced font to 44px and added whitespace-nowrap to absolutely guarantee it stays on 
-                    a single line and perfectly matches the Figma layout without overflowing the box. */}
-                <h3 className="font-display text-[28px] lg:text-[44px] font-semibold leading-[1.1] text-white whitespace-nowrap">
+                {/* Reduced font to 44px and added lg:whitespace-nowrap to absolutely guarantee it stays on 
+                    a single line and perfectly matches the Figma layout on desktop without overflowing the box. */}
+                <h3 className="font-display text-[28px] lg:text-[44px] font-semibold leading-[1.1] text-white whitespace-normal lg:whitespace-nowrap">
                   Growing Stronger Together
                 </h3>
               </div>

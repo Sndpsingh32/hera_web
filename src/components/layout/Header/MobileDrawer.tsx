@@ -1,14 +1,80 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { AnimatePresence, motion } from "framer-motion";
 import { ChevronDown, Linkedin, X } from "lucide-react";
 import { HeaderButton } from "@/components/layout/Header/HeaderButton";
-import { mobileSocialLinks, navItems } from "@/components/layout/Header/navData";
+import { mobileSocialLinks, navItems, type NavItem } from "@/components/layout/Header/navData";
 
 type MobileDrawerProps = {
   open: boolean;
   onClose: () => void;
 };
+
+function MobileNavItem({ item, onClose }: { item: NavItem; onClose: () => void }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const hasDropdown = item.dropdown && item.dropdown.length > 0;
+
+  const handleClick = (e: React.MouseEvent) => {
+    if (hasDropdown) {
+      e.preventDefault();
+      setIsOpen(!isOpen);
+    } else {
+      onClose();
+    }
+  };
+
+  return (
+    <div className="flex flex-col">
+      {item.to && !hasDropdown ? (
+        <Link
+          to={item.to}
+          onClick={handleClick}
+          className="flex items-center justify-between rounded-md px-2 py-4 font-display text-lg font-medium text-white transition-colors hover:text-white/80"
+        >
+          {item.label}
+        </Link>
+      ) : (
+        <button
+          onClick={handleClick}
+          className="flex items-center justify-between rounded-md px-2 py-4 font-display text-lg font-medium text-white transition-colors hover:text-white/80 w-full text-left"
+        >
+          {item.label}
+          {hasDropdown && (
+            <ChevronDown
+              className={`h-4 w-4 text-white/60 transition-transform ${isOpen ? "rotate-180" : ""}`}
+            />
+          )}
+        </button>
+      )}
+
+      {hasDropdown && (
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              className="overflow-hidden"
+            >
+              <div className="flex flex-col gap-2 pl-4 py-2 border-l border-white/10 ml-2 mb-2">
+                {item.dropdown!.map((subItem) => (
+                  <Link
+                    key={subItem.label}
+                    to={subItem.href}
+                    onClick={onClose}
+                    className="font-body text-base text-white/70 hover:text-white py-2"
+                  >
+                    {subItem.label}
+                  </Link>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      )}
+    </div>
+  );
+}
 
 export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
   useEffect(() => {
@@ -53,29 +119,9 @@ export function MobileDrawer({ open, onClose }: MobileDrawerProps) {
             </div>
 
             <nav className="mt-10 flex flex-1 flex-col gap-2 overflow-y-auto">
-              {navItems.map((item) =>
-                item.to ? (
-                  <Link
-                    key={item.label}
-                    to={item.to}
-                    onClick={onClose}
-                    className="flex items-center justify-between rounded-md px-2 py-4 font-display text-lg font-medium text-white transition-colors hover:text-white/80"
-                  >
-                    {item.label}
-                    {item.dropdown && <ChevronDown className="h-4 w-4 text-white/60" />}
-                  </Link>
-                ) : (
-                  <a
-                    key={item.label}
-                    href="#"
-                    onClick={onClose}
-                    className="flex items-center justify-between rounded-md px-2 py-4 font-display text-lg font-medium text-white transition-colors hover:text-white/80"
-                  >
-                    {item.label}
-                    {item.dropdown && <ChevronDown className="h-4 w-4 text-white/60" />}
-                  </a>
-                ),
-              )}
+              {navItems.map((item) => (
+                <MobileNavItem key={item.label} item={item} onClose={onClose} />
+              ))}
             </nav>
 
             <HeaderButton className="mt-6 inline-flex w-full" onClick={onClose} />
