@@ -63,19 +63,19 @@
         {
           "title": "Ferro Manganese Slag",
           "description": "A process-derived material generated during ferro alloys production and utilised across industrial and recovery-based applications.",
-          "link": "/by-products",
+          "link": "/products/ferro-manganese-slag",
           "image": "/src/assets/product-slag.jpg"
         },
         {
           "title": "MOX Dust",
           "description": "Manganese oxide-rich by-product recovered during manufacturing and used in downstream industrial applications.",
-          "link": "/by-products",
+          "link": "/products/mox-dust",
           "image": "/src/assets/product-slag.jpg"
         },
         {
           "title": "Rejected Slag Dust",
           "description": "Recovered process residue is redirected for industrial use to optimise material utilisation throughout the production cycle.",
-          "link": "/by-products",
+          "link": "/products/rejected-slag-dust",
           "image": "/src/assets/product-slag.jpg"
         }
       ]

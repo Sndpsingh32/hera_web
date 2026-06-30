@@ -17,7 +17,8 @@ export function SustainabilityHero({ product }: { product?: any }) {
         height={1002}
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.1)_45%,rgba(0,0,0,0.85)_100%)]" />
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.95)_0%,rgba(0,0,0,0.5)_50%,rgba(0,0,0,0.95)_100%)]" />
 
       <div className="section-container relative flex h-full min-h-[560px] flex-col items-center justify-center pt-[72px] pb-16 text-center text-white lg:pt-[110px] lg:pb-20">
         <motion.h1

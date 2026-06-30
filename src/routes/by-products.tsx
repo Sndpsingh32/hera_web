@@ -22,7 +22,7 @@ export const Route = createFileRoute("/by-products")({
 
 function ByProductsPage() {
   const data = websiteContent.byProducts;
-  
+
   // Transform byProducts data to fit the SustainabilityHero format
   const heroData = {
     hero: data.hero,
@@ -64,22 +64,22 @@ function ByProductsPage() {
       {/* Iterate over By-Products Items */}
       {data.items.map((item, index) => (
         <div key={item.id}>
-           {/* Re-use hero layout for each item's intro */}
-           <section className="relative min-h-[400px] w-full overflow-hidden flex items-center justify-center">
-             <img
-               src={getImageUrl(item.image)}
-               alt={item.title}
-               className="absolute inset-0 h-full w-full object-cover object-center opacity-40"
-             />
-             <div className="absolute inset-0 bg-black/60" />
-             <div className="relative z-10 px-5 text-center max-w-[800px]">
-               <h2 className="font-display text-[32px] font-bold text-white mb-6">{item.title}</h2>
-               <p className="text-white/80 text-[18px]">{item.intro}</p>
-             </div>
-           </section>
-           
-           {/* Re-use ProductApplications for the item's applications */}
-           <ProductApplications product={{ applications: item.applications }} />
+          {/* Re-use hero layout for each item's intro */}
+          <section className="relative min-h-[400px] w-full overflow-hidden flex items-center justify-center">
+            <img
+              src={getImageUrl(item.image)}
+              alt={item.title}
+              className="absolute inset-0 h-full w-full object-cover object-center opacity-40"
+            />
+            <div className="absolute inset-0 bg-black/60" />
+            <div className="relative z-10 px-5 text-center max-w-[800px]">
+              <h2 className="font-display text-[32px] font-bold text-white mb-6">{item.title}</h2>
+              <p className="text-white/80 text-[18px]">{item.intro}</p>
+            </div>
+          </section>
+
+          {/* Re-use ProductApplications for the item's applications */}
+          <ProductApplications product={{ applications: item.applications }} />
         </div>
       ))}
 

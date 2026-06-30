@@ -38,39 +38,63 @@ function ProductPage() {
       {hasSpecs ? (
         <SpecificationSection product={product} />
       ) : product.whatItIs ? (
-        <section className="relative w-full bg-[#050505] py-20 lg:py-[120px] overflow-hidden flex justify-center">
-          {/* Subtle Background Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] max-w-[800px] bg-[radial-gradient(ellipse_at_center,rgba(226,50,44,0.12)_0%,rgba(0,0,0,0)_70%)] pointer-events-none" />
+        <section className="relative w-full bg-[#050505] py-20 md:py-32 overflow-hidden border-t border-white/5">
+          {/* Subtle Grid Pattern Background */}
+          <div
+            className="absolute inset-0 opacity-[0.02] pointer-events-none"
+            style={{
+              backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)',
+              backgroundSize: '4rem 4rem'
+            }}
+          />
 
-          <motion.div 
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative z-10 mx-auto w-full max-w-[1200px] px-5 lg:px-10"
-          >
-            <div className="bg-white/[0.03] backdrop-blur-[24px] border border-white/[0.08] rounded-[24px] p-[40px] md:p-[60px] lg:p-[80px] shadow-[0_30px_60px_rgba(0,0,0,0.4)] relative overflow-hidden">
-              {/* Inner Red Line accent */}
-              <div className="absolute top-0 left-0 w-full h-[4px] bg-gradient-to-r from-[#EB1E28] to-transparent" />
-              
-              <div className="max-w-[900px]">
-                <div className="flex items-center gap-4 mb-6 md:mb-8">
-                  <div className="w-[40px] h-[2px] bg-[#EB1E28]" />
-                  <span className="font-display text-[14px] md:text-[16px] uppercase tracking-[0.2em] text-[#EB1E28] font-bold">
-                    Material Overview
+          {/* Subtle Red Glow Top Right */}
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#EB1E28]/10 blur-[150px] rounded-full pointer-events-none translate-x-1/3 -translate-y-1/2" />
+
+          <div className="mx-auto w-full max-w-[1400px] px-5 lg:px-[60px] xl:px-[100px] relative z-10">
+            <div className="flex flex-col lg:flex-row lg:items-start gap-10 lg:gap-24">
+
+              {/* Left Side: Eyebrow */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="w-full lg:w-1/3 lg:pt-4"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-[50px] h-[2px] bg-[#EB1E28]" />
+                  <span className="font-display text-[14px] md:text-[16px] uppercase tracking-[0.25em] text-[#EB1E28] font-bold">
+                    Overview
                   </span>
                 </div>
-                
-                <h2 className="mb-6 font-display text-[32px] font-bold leading-[1.2] text-white sm:text-[40px] md:text-[50px] lg:text-[56px]">
+              </motion.div>
+
+              {/* Right Side: Content */}
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                className="w-full lg:w-2/3"
+              >
+                <h2 className="mb-8 font-display text-[36px] font-bold leading-[1.1] text-white sm:text-[48px] md:text-[60px]">
                   {product.whatItIsHeading || "What it is"}
                 </h2>
-                
-                <p className="font-body text-[16px] leading-[1.9] text-white/85 md:text-[20px] lg:text-[22px]">
-                  {product.whatItIs}
-                </p>
-              </div>
+
+                <div className="space-y-6">
+                  {product.whatItIs.split('\n').map((paragraph: string, idx: number) => (
+                    paragraph.trim() && (
+                      <p key={idx} className="font-body text-[18px] leading-[1.9] text-white/70 md:text-[22px] font-light max-w-[850px]">
+                        {paragraph}
+                      </p>
+                    )
+                  ))}
+                </div>
+              </motion.div>
+
             </div>
-          </motion.div>
+          </div>
         </section>
       ) : null}
       <ProductApplications product={product} />
