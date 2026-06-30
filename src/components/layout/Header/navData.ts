@@ -31,6 +31,9 @@ export const navItems: NavItem[] = [
       { label: "High Carbon Ferro Manganese", href: "/products/high-carbon-ferro-manganese" },
       { label: "Medium Carbon Ferro Manganese", href: "/products/medium-carbon-ferro-manganese" },
       { label: "Low Carbon Ferro Manganese", href: "/products/low-carbon-ferro-manganese" },
+      { label: "Rejected Slag Dust", href: "/products/rejected-slag-dust" },
+      { label: "MOX Dust", href: "/products/mox-dust" },
+      { label: "Ferro Manganese Slag", href: "/products/ferro-manganese-slag" },
     ],
   },
 ];

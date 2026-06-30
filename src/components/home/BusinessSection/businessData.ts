@@ -38,17 +38,20 @@ export const products: Product[] = [
   },
   {
     id: 4,
-    title: "Silico Manganese",
+    title: "Rejected Slag Dust",
     image: productManganese,
+    link: "/products/rejected-slag-dust",
   },
   {
     id: 5,
-    title: "Ferro Silicon",
+    title: "MOX Dust",
     image: productSlag,
+    link: "/products/mox-dust",
   },
   {
     id: 6,
-    title: "Manganese Ore",
+    title: "Ferro Manganese Slag",
     image: productStorage,
+    link: "/products/ferro-manganese-slag",
   },
 ];
