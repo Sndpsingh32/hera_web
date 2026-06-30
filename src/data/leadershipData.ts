@@ -7,7 +7,8 @@ import dscf1012 from "@/assets/leader/compressed_DSCF1012.png";
 import dscf1022 from "@/assets/leader/compressed_DSCF1022.png";
 import omprakashImg from "@/assets/leader/omprakash.jpeg";
 import vikashaImg from "@/assets/leader/vikasha.jpeg";
-
+import shrinaivas from "@/assets/leader/shrinivasa.JPG"
+import ashokkumar from "@/assets/leader/ashokkumar.JPG"
 export interface Director {
   id: number;
   name: string;
@@ -42,14 +43,14 @@ export const boardDirectors: Director[] = [
     id: 4,
     name: "Ashok Kumar Dash",
     designation: "Executive Director",
-    image: dscf104,
+    image: ashokkumar,
     description: "He holds a bachelor’s degree in commerce from P.N. College, Khurda, Utkal University and a bachelor’s degree in law from Capital Law College, Bhubaneshwar, Utkal’s University. He also holds a post graduate diploma in personnel management from National Institute of Personnel Management, Calcutta. He is currently responsible for the end-to-end management of the ferro alloys manufacturing facility, including production, engineering, maintenance, quality assurance, procurement coordination, and statutory compliance."
   },
   {
     id: 5,
     name: "Pappala Srinivasa Rao",
     designation: "Whole-Time Director",
-    image: dscf1017,
+    image: shrinaivas,
     description: "He is responsible for personnel administration, statutory compliance, government liaison and maintaining smooth industrial relations and administrative operations of the organization. He holds a degree of Bachelor of Law from Andhra University, Visakhapatnam."
   }
 ];
