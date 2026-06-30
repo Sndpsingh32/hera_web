@@ -9,6 +9,9 @@ import omprakashImg from "@/assets/leader/omprakash.jpeg";
 import vikashaImg from "@/assets/leader/vikasha.jpeg";
 import shrinaivas from "@/assets/leader/shrinivasa.JPG"
 import ashokkumar from "@/assets/leader/ashokkumar.JPG"
+import potta from "@/assets/leader/potta.JPG";
+import chir from "@/assets/leader/mchirinjivi.JPG";
+import shashikanata from "@/assets/leader/shrinivasana.jpeg";
 export interface Director {
   id: number;
   name: string;
@@ -61,28 +64,28 @@ export const seniorManagement: Director[] = [
     id: 1,
     name: "Siddharth Borkar",
     designation: "Finance",
-    image: vikashaImg,
+    image: dscf1022,
     description: "Responsible for finalizing accounts, managing audits and ensuring adherence to tax regulations. He holds a Master's degree from Pt. Ravishankar Shukla University and an MBA from Sikkim Manipal University."
   },
   {
     id: 2,
     name: "Midathana Chiranjeevi",
     designation: "Production",
-    image: dscf1012,
+    image: chir,
     description: "Responsible for ferro alloys production management, furnace operations and supervision, process optimization, and quality control. He holds a Diploma in Metallurgical Engineering from State Board of Technical Education & Training, Andhra Pradesh."
   },
   {
     id: 3,
     name: "Potta Gunnaraju",
     designation: "Finance",
-    image: dscf1022,
+    image: potta,
     description: "Responsible for managing day-to-day finance and accounts operations, including accounting, financial reporting, cost analysis, taxation, and compliance. He holds a Master of Commerce degree from Andhra University."
   },
   {
     id: 4,
     name: "Shashikanata Behera",
     designation: "Mechanical",
-    image: omprakashImg,
+    image: shashikanata,
     description: "Oversees equipment reliability, preventive and corrective maintenance activities, plant utilities, resource planning, and compliance with safety requirements. He holds a Diploma in Mechanical Engineering from JRN Rajasthan Vidyapeeth University."
   },
 

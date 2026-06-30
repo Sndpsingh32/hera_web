@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, Search } from "lucide-react";
 import { motion } from "framer-motion";
-import hiraLogo from "@/assets/hira_logo.jpg";
+import hiraLogo from "@/assets/hira_logo.png";
 import { MobileDrawer } from "@/components/layout/Header/MobileDrawer";
 import { NavbarDropdown } from "@/components/layout/Header/NavbarDropdown";
 import { navItems } from "@/components/layout/Header/navData";
@@ -38,9 +38,9 @@ export function Header() {
               transition={{ duration: 0.3 }}
               src={hiraLogo}
               alt="HIRA Electro Smelters"
-              width={170}
-              height={72}
-              className="h-[48px] w-[120px] object-contain object-left sm:h-[60px] sm:w-[150px] lg:h-[72px] lg:w-[170px]"
+              width={220}
+              height={90}
+              className="h-[60px] w-[150px] object-contain object-left sm:h-[100px] sm:w-[220px] lg:h-[150px] lg:w-[220px]"
             />
           </Link>
 

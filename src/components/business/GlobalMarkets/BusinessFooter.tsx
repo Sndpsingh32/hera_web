@@ -1,4 +1,4 @@
-import hiraLogo from "@/assets/hira_logo.jpg";
+import hiraLogo from "@/assets/hira_logo.png";
 import { Link } from "@tanstack/react-router";
 
 const footerColumns = [
@@ -38,7 +38,7 @@ export function BusinessFooter() {
               <img
                 src={hiraLogo}
                 alt="HIRA Electro Smelters"
-                className="h-[60px] w-auto object-contain md:h-[80px]"
+                className="h-[80px] w-auto object-contain md:h-[100px]"
               />
             </Link>
             <p className="mt-6 text-sm text-white/90">

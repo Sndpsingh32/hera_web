@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "@tanstack/react-router";
-import hiraLogo from "@/assets/hira_logo.jpg";
+import hiraLogo from "@/assets/hira_logo.png";
 import { FooterBottom } from "@/components/home/Footer/FooterBottom";
 import { FooterColumn } from "@/components/home/Footer/FooterColumn";
 import { footerColumns, footerCopy } from "@/components/home/Footer/footerData";
@@ -21,7 +21,7 @@ export function Footer() {
               <img
                 src={hiraLogo}
                 alt="HIRA Electro Smelters"
-                className="h-auto w-[180px] max-w-full object-contain sm:w-[220px]"
+                className="h-auto w-[150px] max-w-full object-contain sm:w-[180px]"
               />
             </Link>
 
