@@ -4,6 +4,8 @@ import { DirectorCard } from "./DirectorCard";
 import { boardDirectors, seniorManagement } from "@/data/leadershipData";
 import bgImage from "@/assets/leaderbg.jpg";
 import founderImage from "@/assets/leaderm.png";
+import rahulImg from "@/assets/leader/DSCF102.jpeg";
+import vikasImg from "@/assets/leader/vikasha.jpeg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -40,12 +42,12 @@ const legacyPersons = [
   {
     name: "Rahul Agrawal",
     role: "Chairman & Managing Director",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80",
+    image: rahulImg,
   },
   {
     name: "Vikas Agrawal",
     role: "Director",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    image: vikasImg,
   },
 ];
 
