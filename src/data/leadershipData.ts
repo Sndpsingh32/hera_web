@@ -27,18 +27,19 @@ export const boardDirectors: Director[] = [
   },
   {
     id: 2,
-    name: "Ashish Dakalia",
-    designation: "Company Secretary and Compliance Officer",
-    image: ashishImg,
-    description: "He is a fellow member of Institute of Company Secretaries of India. He is currently responsible for overseeing secretarial and corporate compliance functions, including Board and shareholder matters, statutory filings, maintenance of corporate records, and implementation of governance practice."
-  },
-  {
-    id: 3,
     name: "Rajesh Kumar Jadwani",
     designation: "Chief Finance Officer",
     image: rajeshImg,
     description: "He holds Bachelor of Commerce degree from Pt. Ravishankar Shukla University. He is currently responsible for overseeing the financial affairs of the company and ensuring its financial stability, compliance and growth."
   },
+  {
+    id: 3,
+    name: "Ashish Dakalia",
+    designation: "Company Secretary and Compliance Officer",
+    image: ashishImg,
+    description: "He is a fellow member of Institute of Company Secretaries of India. He is currently responsible for overseeing secretarial and corporate compliance functions, including Board and shareholder matters, statutory filings, maintenance of corporate records, and implementation of governance practice."
+  },
+
   {
     id: 4,
     name: "Ashok Kumar Dash",
@@ -58,30 +59,31 @@ export const boardDirectors: Director[] = [
 export const seniorManagement: Director[] = [
   {
     id: 1,
+    name: "Siddharth Borkar",
+    designation: "Finance",
+    image: vikashaImg,
+    description: "Responsible for finalizing accounts, managing audits and ensuring adherence to tax regulations. He holds a Master's degree from Pt. Ravishankar Shukla University and an MBA from Sikkim Manipal University."
+  },
+  {
+    id: 2,
     name: "Midathana Chiranjeevi",
-    designation: "Assistant General Manager - Production",
+    designation: "Production",
     image: dscf1012,
     description: "Responsible for ferro alloys production management, furnace operations and supervision, process optimization, and quality control. He holds a Diploma in Metallurgical Engineering from State Board of Technical Education & Training, Andhra Pradesh."
   },
   {
-    id: 2,
+    id: 3,
     name: "Potta Gunnaraju",
-    designation: "Assistant Manager – Finance",
+    designation: "Finance",
     image: dscf1022,
     description: "Responsible for managing day-to-day finance and accounts operations, including accounting, financial reporting, cost analysis, taxation, and compliance. He holds a Master of Commerce degree from Andhra University."
   },
   {
-    id: 3,
+    id: 4,
     name: "Shashikanata Behera",
-    designation: "Senior Manager – Mechanical",
+    designation: "Mechanical",
     image: omprakashImg,
     description: "Oversees equipment reliability, preventive and corrective maintenance activities, plant utilities, resource planning, and compliance with safety requirements. He holds a Diploma in Mechanical Engineering from JRN Rajasthan Vidyapeeth University."
   },
-  {
-    id: 4,
-    name: "Siddharth Borkar",
-    designation: "Assistant General Manager – Finance",
-    image: vikashaImg,
-    description: "Responsible for finalizing accounts, managing audits and ensuring adherence to tax regulations. He holds a Master's degree from Pt. Ravishankar Shukla University and an MBA from Sikkim Manipal University."
-  }
+
 ];
