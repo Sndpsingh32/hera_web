@@ -45,4 +45,4 @@ export const processSteps: ProcessStep[] = [
   },
 ];
 
-export const DEFAULT_ACTIVE_INDEX = 2;
+export const DEFAULT_ACTIVE_INDEX = 0;
