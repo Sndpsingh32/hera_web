@@ -35,6 +35,7 @@ export function ProductCard({ product, isActive, onActivate }: ProductCardProps)
 
   return (
     <article
+      data-product-card
       role="button"
       tabIndex={0}
       aria-label={product.title}
