@@ -1,5 +1,5 @@
 import { Factory, Award, type LucideIcon } from "lucide-react";
-import efficientFurnace from "@/assets/efficient-furnace.jpg";
+import efficientFurnace from "@/assets/efficientby.JPG";
 
 export type EfficientFeature = {
   icon: LucideIcon;
@@ -7,8 +7,8 @@ export type EfficientFeature = {
 };
 
 export const efficientFeatures: EfficientFeature[] = [
-  { icon: Factory, title: "Think Long Term" },
-  { icon: Award, title: "Our Manufacturing Approach" },
+  { icon: Factory, title: "" },
+  { icon: Award, title: "" },
 ];
 
 export const efficientDefaults = {

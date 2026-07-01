@@ -1,5 +1,5 @@
 import heroFurnace from "@/assets/hero-furnace.jpg";
-import efficientFurnace from "@/assets/efficient-furnace.jpg";
+import efficientFurnace from "@/assets/landinghero2nd.JPG";
 import plantAerial from "@/assets/plant-aerial.jpg";
 
 export type HeroSlide = {

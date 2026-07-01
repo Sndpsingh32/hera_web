@@ -20,7 +20,7 @@ export function AboutHero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="font-display max-w-[910px] text-[clamp(1.75rem,4.5vw,3.125rem)] font-semibold leading-[110%] tracking-[0.01em]"
         >
-          About Us
+
         </motion.h1>
       </div>
     </section>

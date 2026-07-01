@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react";
-import { Building2, Factory, Flame, Layers, Truck } from "lucide-react";
+import { Building2, Factory, Flame, Layers, Truck, ClipboardCheck, Package } from "lucide-react";
 
 export type ProcessStep = {
   index: string;
@@ -32,6 +32,16 @@ export const processSteps: ProcessStep[] = [
     index: "05",
     label: "Refining & Decarburisation",
     icon: Building2,
+  },
+  {
+    index: "06",
+    label: "Quality Inspection",
+    icon: ClipboardCheck,
+  },
+  {
+    index: "07",
+    label: "Sizing, Packing & Dispatch",
+    icon: Package,
   },
 ];
 

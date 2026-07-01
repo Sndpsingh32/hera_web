@@ -14,7 +14,7 @@ export const navItems: NavItem[] = [
     label: "About Us",
     to: "/about",
     dropdown: [
-      { label: "About Us", href: "/about" },
+      { label: "Overview", href: "/about" },
       { label: "Our Leadership", href: "/people" },
     ],
   },

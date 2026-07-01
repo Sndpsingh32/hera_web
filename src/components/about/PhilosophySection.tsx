@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bgImage from "@/assets/containers.jpg";
+import bgImage from "@/assets/ab3.jpg";
 import leaderImage from "@/assets/ableader.jpg";
 
 const cards = [
@@ -117,11 +117,11 @@ export function PhilosophySection() {
             <span className="font-display font-semibold text-[16px] lg:text-[20px] text-white uppercase tracking-wider mb-[16px] lg:mb-[20px]">
               OUR LEADERSHIP
             </span>
-            <h2 className="font-display font-semibold text-[32px] lg:text-[38px] leading-[1.2] lg:leading-[45px] text-white mb-[24px] lg:mb-[30px]">
+            {/* <h2 className="font-display font-semibold text-[32px] lg:text-[38px] leading-[1.2] lg:leading-[45px] text-white mb-[24px] lg:mb-[30px]">
               Our leadership sets
               <br className="hidden lg:block" />
               the foundation
-            </h2>
+            </h2> */}
             <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[160%] text-white mb-[32px] lg:mb-[40px]">
               Our leadership sets the foundation for how HESL grows, operates, and delivers. With a focus on discipline, accountability, and long-term value creation, our management guides us toward stronger systems, sharper execution, and sustainable progress.
             </p>

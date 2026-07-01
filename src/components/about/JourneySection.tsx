@@ -154,7 +154,7 @@ export function JourneySection() {
                       <span className="font-display font-semibold text-[36px] lg:text-[50px] leading-[1] lg:leading-[45px] text-[#EB1E28] mb-[15px]">
                         {item.year}
                       </span>
-                      <h3 className="font-display font-semibold text-[20px] lg:text-[24px] leading-[1.2] lg:leading-[45px] text-white mb-[6px]">
+                      <h3 className="font-display font-semibold text-[20px] lg:text-[24px] leading-[1.2] lg:leading-[45px] text-white mb-[0px]">
                         {item.title}
                       </h3>
                       <p className="font-body font-normal text-[16px] lg:text-[20px] leading-[1.5] lg:leading-[1] text-white/90">
